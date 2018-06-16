@@ -1,7 +1,11 @@
 package hello;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.concurrent.atomic.AtomicLong;
 
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,4 +26,24 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name));
     }
+
+    //https://stackoverflow.com/questions/40557637/how-to-return-an-image-in-spring-boot-controller-and-serve-like-a-file-system/40585852
+    @CrossOrigin
+    @RequestMapping("/image")
+    public ResponseEntity<byte[]> image() throws IOException {
+
+        try (InputStream resourceAsStream = this.getClass().getResourceAsStream("/myimage.jpeg")) {
+
+            int len = resourceAsStream.available();
+
+            byte[] img = new byte[len];
+
+            resourceAsStream.read(img);
+
+            return ResponseEntity.ok().contentType(MediaType.IMAGE_JPEG).body(img);
+            
+        }
+
+    }
+
 }
