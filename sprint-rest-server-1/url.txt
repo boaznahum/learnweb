@@ -7,4 +7,8 @@ tested http://localhost:8080/greeting
 
 fetching data
   https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2
+
+
+Good:https://developer.okta.com/blog/2017/12/06/bootiful-development-with-spring-boot-and-react
+
   
