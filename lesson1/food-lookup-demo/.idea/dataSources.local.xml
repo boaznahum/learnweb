@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="dataSourceStorageLocal">
-    <data-source name="usda-nnd" uuid="bf68c229-fbd0-47ee-8a8d-4be5236d87c3">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" family="SQLITE" exact-version="0.0" />
-    </data-source>
-  </component>
-</project>
