@@ -1,0 +1,10 @@
+https://spring.io/guides/gs/rest-service/
+
+I ran gradle task bootRun
+tested http://localhost:8080/greeting
+
+\
+
+fetching data
+  https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2
+  

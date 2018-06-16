@@ -1,0 +1,15 @@
+#react app ?
+semantic/
+
+
+#gradle
+.gradle/
+gradle/
+build/
+Gradle__*.xml
+
+
+#intellij
+out/
+workspace.xml
+

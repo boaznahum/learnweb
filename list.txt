@@ -1,0 +1,10 @@
+DB: https://stormpath.com/blog/crud-application-react-spring-boot-user-authentication
+
+DB: https://www.djamware.com/post/5ab6397c80aca714d19d5b9c/building-spring-boot-mongodb-and-reactjs-crud-web-application
+
+
+https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/
+
+
+add react to existing https://reactjs.org/docs/add-react-to-an-existing-app.html#installing-react
+
