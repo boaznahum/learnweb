@@ -3,9 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/react-use-rest-1/react-use-rest-1.iml" filepath="$PROJECT_DIR$/react-use-rest-1/react-use-rest-1.iml" group="react-rest-1" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server-1.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server-1.iml" group="react-rest-1" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server-1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server-1_main.iml" group="react-rest-1" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server-1_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server-1_test.iml" group="react-rest-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server-1.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server-1_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server-1_main.iml" group="sprint-rest-server-1" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server-1_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server-1_test.iml" group="sprint-rest-server-1" />
     </modules>
   </component>
 </project>
