@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.css';
 // @ts-ignore
-import Greeting from './Greeting'
+import Repository from './Repository.tsx'
 
 class App extends React.Component {
     public render() {
@@ -11,20 +11,16 @@ class App extends React.Component {
             <table className="App">
                 <tr>
                     <td className="Remote" colSpan={2}>
-                        <h3>Remote</h3>
-
-
+                        <Repository repoID="remote" name="Remote" hasConsole={false}/>
                     </td>
                 </tr>
                 <tr>
                     <td className="Local">
-                        <h3>Local 1</h3>
-
+                        <Repository repoID="local1" name="Local 1" hasConsole={true}/>
                     </td>
 
                     <td className="Local">
-                        <h3>Local 2</h3>
-
+                        <Repository repoID="local2" name="Local 2" hasConsole={true}/>
                     </td>
                 </tr>
 

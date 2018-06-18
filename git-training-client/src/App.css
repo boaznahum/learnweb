@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  text-align: left;
+    vertical-align: text-top;
 
     position: absolute;
     top: 0;
@@ -13,6 +14,11 @@
 ;
 }
 
+/* td; */
+
+.Remote, .Local {
+    vertical-align: top;
+}
 .Remote {
     border: 2px solid black;
 }
