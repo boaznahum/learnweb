@@ -12,4 +12,7 @@ Gradle__*.xml
 #intellij
 out/
 workspace.xml
+.idea/WFDiagnosticsSettings.xml
+.idea/WFPortalNameSettings.xml
+.idea/wf_run_local_options.xml
 
