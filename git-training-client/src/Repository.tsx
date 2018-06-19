@@ -1,6 +1,8 @@
 import * as React from 'react';
 import {Component} from "react";
 
+import GitTerminal from './GitTerminal';
+
 const DATE_URL = "http://localhost:8080/greeting";
 const IMAGE_URL = "http://localhost:8080/image";
 
@@ -57,36 +59,46 @@ class Repository extends Component<IProps, IState> {
 
         this.fetchImage();
 
-        setInterval( () => {
-            this.imageRefreshID=new Date().toTimeString();
+        setInterval(() => {
+            this.imageRefreshID = new Date().toTimeString();
             this.fetchImage();
         }, 3000);
 
     }
 
 
-
     public render() {
 
         let img = null;
         if (this.state.image) {
-            img = <img src={this.state.image}/>
+            img = <img  src={this.state.image}/>
+        }
+
+        let terminal = null;
+        if (this.props.hasConsole) {
+
+            terminal =
+                (
+                    <tr className="Terminal">
+                    <td >
+                        <GitTerminal/>
+                    </td>
+
+                    </tr>
+                )
         }
 
         return (
-            <div className="Repository">
-                <h3>{this.props.name}</h3>
-                <header className="App-header">
-                    <h1 className="App-title">Got data</h1>
-                    <p>id={this.state.data.id}</p>
-                    <p>content={this.state.data.content}</p>
+            <table className="Repository">
+                <tr>
+                    <td><h3>{this.props.name}</h3></td>
+                </tr>
+                <tr className="HistoryRow">
+                    <td className="HistoryImage"> {img}</td>
+                </tr>
+                {terminal}
 
-
-                    {img}
-
-                </header>
-
-            </div>
+            </table>
         );
     }
 
