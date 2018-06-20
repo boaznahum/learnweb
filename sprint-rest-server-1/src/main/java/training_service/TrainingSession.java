@@ -1,6 +1,7 @@
 package training_service;
 
 import java.io.IOException;
+import java.util.concurrent.ExecutionException;
 
 /**
  * @author Boaz Nahum
@@ -9,4 +10,6 @@ import java.io.IOException;
 public interface TrainingSession {
 
     byte[] getImage(String repoID) throws IOException;
+
+    String runCommand(String repoID, String command) throws IOException, ExecutionException, InterruptedException;
 }

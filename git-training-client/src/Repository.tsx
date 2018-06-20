@@ -2,7 +2,6 @@ import * as React from 'react';
 import {Component} from "react";
 
 
-const DATE_URL = "http://localhost:8080/greeting";
 const IMAGE_URL = "http://localhost:8080/image";
 
 // https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2
@@ -43,18 +42,6 @@ class Repository extends Component<IProps, IState> {
 
     // https://developer.okta.com/blog/2017/12/06/bootiful-development-with-spring-boot-and-react
     public componentDidMount() {
-        fetch(DATE_URL)
-            .then(res => {
-                return res.json();
-            })
-            .then(res => {
-                // this.setState( {data:JSON.stringify(res) });
-                this.setState({data: res});
-            })
-            .catch(reason => {
-                // throw TypeError("bad data" + reason.toString());
-            });
-
 
         this.fetchImage();
 

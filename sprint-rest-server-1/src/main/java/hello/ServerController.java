@@ -10,6 +10,7 @@ import training_service.TrainingService;
 import training_service.TrainingSession;
 
 import java.io.IOException;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
@@ -46,5 +47,27 @@ public class ServerController {
 
 
     }
+
+    @CrossOrigin
+    @RequestMapping("/runCommand")
+    public String runCommand(@RequestParam(value = "sessionID") String sessionID,
+                                        @RequestParam(value = "repoID") String repoID,
+                                        @RequestParam(value = "command") String command
+    ) throws IOException, ExecutionException, InterruptedException {
+
+
+        TrainingService ts = TrainingService.instance();
+
+        TrainingSession sess = ts.getSession(sessionID);
+
+
+        String response = sess.runCommand(repoID, command);
+
+        return response;
+
+
+    }
+
+
 
 }

@@ -16,7 +16,7 @@ class App extends React.Component {
                 </div>
 
                 <div className="Terminal">
-                    <GitTerminal />
+                    <GitTerminal sessionID={"1"}/>
                 </div>
 
                 <div className="Local">
