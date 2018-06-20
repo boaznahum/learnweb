@@ -1,7 +1,6 @@
 import * as React from 'react';
 import {Component} from "react";
 
-import GitTerminal from './GitTerminal';
 
 const DATE_URL = "http://localhost:8080/greeting";
 const IMAGE_URL = "http://localhost:8080/image";
@@ -53,7 +52,7 @@ class Repository extends Component<IProps, IState> {
                 this.setState({data: res});
             })
             .catch(reason => {
-                throw TypeError("bad data" + reason.toString());
+                // throw TypeError("bad data" + reason.toString());
             });
 
 
@@ -74,20 +73,6 @@ class Repository extends Component<IProps, IState> {
             img = <img  src={this.state.image}/>
         }
 
-        let terminal = null;
-        if (this.props.hasConsole) {
-
-            terminal =
-                (
-                    <tr className="Terminal">
-                    <td >
-                        <GitTerminal/>
-                    </td>
-
-                    </tr>
-                )
-        }
-
         return (
             <table className="Repository">
                 <tr>
@@ -96,7 +81,6 @@ class Repository extends Component<IProps, IState> {
                 <tr className="HistoryRow">
                     <td className="HistoryImage"> {img}</td>
                 </tr>
-                {terminal}
 
             </table>
         );

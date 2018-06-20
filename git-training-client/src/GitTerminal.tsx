@@ -2,9 +2,9 @@ import * as React from 'react';
 import {Component} from "react";
 
 // @ts-ignore
-// import Terminal from 'terminal-in-react';
+ import Terminal from 'terminal-in-react';
 
-import Console from 'react-console-component'
+// import Console from 'react-console-component'
 
 
 class GitTerminal extends Component<{}, {}> {
@@ -34,18 +34,12 @@ class GitTerminal extends Component<{}, {}> {
                 }}
             >
 */}
-        const h = (text:string):any => {
-
-            // noinspection TsLint
-            //
-        };
 
         // @ts-ignore
         // @ts-ignore
         return (
-                <Console
-                 handler ={ h }/>
-            // </div>
+                <Terminal />
+
         );
     }
 

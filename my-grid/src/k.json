@@ -1,0 +1,6521 @@
+{
+  "size": 156,
+  "limit": 1000,
+  "isLastPage": true,
+  "values": [
+    {
+      "slug": "4systoolstests",
+      "id": 230,
+      "name": "4systoolsTests",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "DEVOPS",
+        "id": 44,
+        "name": "DevOps",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVOPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/devops/4systoolstests.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devops/4systoolstests.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVOPS/repos/4systoolstests/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "amatappbin",
+      "id": 15,
+      "name": "AMATAppBin",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "DEVOPS",
+        "id": 44,
+        "name": "DevOps",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVOPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/devops/amatappbin.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devops/amatappbin.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVOPS/repos/amatappbin/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "cdsemurai",
+      "id": 25,
+      "name": "CDSEMurai",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "CD",
+        "id": 62,
+        "name": "CD",
+        "description": "CD SEMurai",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/CD"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/cd/cdsemurai.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/cd/cdsemurai.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/CD/repos/cdsemurai/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "csemsamples",
+      "id": 229,
+      "name": "CSemSamples",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "CD",
+        "id": 62,
+        "name": "CD",
+        "description": "CD SEMurai",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/CD"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/cd/csemsamples.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/cd/csemsamples.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/CD/repos/csemsamples/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "dev4all",
+      "id": 16,
+      "name": "dev4all",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "DEVOPS",
+        "id": 44,
+        "name": "DevOps",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVOPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devops/dev4all.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/devops/dev4all.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVOPS/repos/dev4all/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "devopsip",
+      "id": 28,
+      "name": "devopsip",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "DEVOPSIP",
+        "id": 70,
+        "name": "devopsip",
+        "description": "IP group devsop",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVOPSIP"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devopsip/devopsip.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/devopsip/devopsip.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVOPSIP/repos/devopsip/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "fahostsim",
+      "id": 247,
+      "name": "FAHostSim",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "CD",
+        "id": 62,
+        "name": "CD",
+        "description": "CD SEMurai",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/CD"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/cd/fahostsim.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/cd/fahostsim.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/CD/repos/fahostsim/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "git-auto-install",
+      "id": 240,
+      "name": "Git Auto Install",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "DEVOPS",
+        "id": 44,
+        "name": "DevOps",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVOPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devops/git-auto-install.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/devops/git-auto-install.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVOPS/repos/git-auto-install/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "git30mlabinitial",
+      "id": 234,
+      "name": "Git30mLabInitial",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "DEVTRAINING",
+        "id": 131,
+        "name": "devops/training",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVTRAINING"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devtraining/git30mlabinitial.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/devtraining/git30mlabinitial.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVTRAINING/repos/git30mlabinitial/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "jira",
+      "id": 22,
+      "name": "Jira",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "DEVOPS",
+        "id": 44,
+        "name": "DevOps",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVOPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/devops/jira.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devops/jira.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVOPS/repos/jira/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "mainwf_old",
+      "id": 12,
+      "name": "mainwf_old",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "MON",
+        "id": 42,
+        "name": "mon",
+        "description": "All Monolith repos",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/MON"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/mon/mainwf_old.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/mon/mainwf_old.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/MON/repos/mainwf_old/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "mainwf_recover",
+      "id": 223,
+      "name": "mainwf_recover",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "MON",
+        "id": 42,
+        "name": "mon",
+        "description": "All Monolith repos",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/MON"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/mon/mainwf_recover.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/mon/mainwf_recover.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/MON/repos/mainwf_recover/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "mainwf_was",
+      "id": 224,
+      "name": "mainwf_was",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "MON",
+        "id": 42,
+        "name": "mon",
+        "description": "All Monolith repos",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/MON"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/mon/mainwf_was.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/mon/mainwf_was.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/MON/repos/mainwf_was/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "minimon",
+      "id": 231,
+      "name": "minimon",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "MON",
+        "id": 42,
+        "name": "mon",
+        "description": "All Monolith repos",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/MON"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/mon/minimon.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/mon/minimon.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/MON/repos/minimon/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "nir_test",
+      "id": 233,
+      "name": "nir_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "MON",
+        "id": 42,
+        "name": "mon",
+        "description": "All Monolith repos",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/MON"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/mon/nir_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/mon/nir_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/MON/repos/nir_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "prepare",
+      "id": 44,
+      "name": "prepare",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "DEVTRAINING",
+        "id": 131,
+        "name": "devops/training",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVTRAINING"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/devtraining/prepare.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devtraining/prepare.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVTRAINING/repos/prepare/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "q3dmeas",
+      "id": 162,
+      "name": "Q3DMeas",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/q3dmeas.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/q3dmeas.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/q3dmeas/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qactivelearning",
+      "id": 202,
+      "name": "QActiveLearning",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qactivelearning.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qactivelearning.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qactivelearning/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qactivelearning_g2b_test",
+      "id": 145,
+      "name": "QActiveLearning_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qactivelearning_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qactivelearning_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qactivelearning_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qactivemdc",
+      "id": 203,
+      "name": "QActiveMDC",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qactivemdc.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qactivemdc.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qactivemdc/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qactivemdc_g2b_test",
+      "id": 146,
+      "name": "QActiveMDC_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qactivemdc_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qactivemdc_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qactivemdc_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qadcdeeplearning",
+      "id": 189,
+      "name": "QADCDeepLearning",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qadcdeeplearning.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qadcdeeplearning.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qadcdeeplearning/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qadcdeeplearning_g2b_test",
+      "id": 132,
+      "name": "QADCDeepLearning_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qadcdeeplearning_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qadcdeeplearning_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qadcdeeplearning_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qanalysissetup",
+      "id": 191,
+      "name": "QAnalysisSetup",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qanalysissetup.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qanalysissetup.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qanalysissetup/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qanalysissetup_g2b_test",
+      "id": 134,
+      "name": "QAnalysisSetup_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qanalysissetup_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qanalysissetup_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qanalysissetup_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qbasecore",
+      "id": 168,
+      "name": "QBaseCore",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qbasecore.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qbasecore.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qbasecore/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qbasecore_g2b_test",
+      "id": 111,
+      "name": "QBaseCore_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qbasecore_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qbasecore_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qbasecore_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qbatchreprocess",
+      "id": 210,
+      "name": "QBatchReprocess",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qbatchreprocess.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qbatchreprocess.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qbatchreprocess/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qbatchreprocess_g2b_test",
+      "id": 153,
+      "name": "QBatchReprocess_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qbatchreprocess_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qbatchreprocess_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qbatchreprocess_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qbuildsystemcore",
+      "id": 219,
+      "name": "QBuildSystemCore",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qbuildsystemcore.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qbuildsystemcore.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qbuildsystemcore/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcadanalyzer",
+      "id": 220,
+      "name": "QCADAnalyzer",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcadanalyzer.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcadanalyzer.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcadanalyzer/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcaddataservice",
+      "id": 182,
+      "name": "QCADDataService",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcaddataservice.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcaddataservice.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcaddataservice/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcaddataservice_g2b_test",
+      "id": 125,
+      "name": "QCADDataService_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qcaddataservice_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qcaddataservice_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qcaddataservice_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcadsetup",
+      "id": 190,
+      "name": "QCADSetup",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcadsetup.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcadsetup.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcadsetup/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcadsetup_g2b_test",
+      "id": 133,
+      "name": "QCADSetup_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qcadsetup_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qcadsetup_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qcadsetup_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcommonwidgets",
+      "id": 245,
+      "name": "QCommonWidgets",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcommonwidgets.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcommonwidgets.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcommonwidgets/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcomptemplate",
+      "id": 165,
+      "name": "QCompTemplate",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcomptemplate.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcomptemplate.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcomptemplate/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcomptemplate_g2b_test",
+      "id": 108,
+      "name": "QCompTemplate_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qcomptemplate_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qcomptemplate_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qcomptemplate_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcomptemplateappcomp",
+      "id": 194,
+      "name": "QCompTemplateAppComp",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcomptemplateappcomp.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcomptemplateappcomp.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcomptemplateappcomp/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcomptemplateappcomp_g2b_test",
+      "id": 137,
+      "name": "QCompTemplateAppComp_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qcomptemplateappcomp_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qcomptemplateappcomp_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qcomptemplateappcomp_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcomptemplateempty",
+      "id": 221,
+      "name": "QCompTemplateEmpty",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcomptemplateempty.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcomptemplateempty.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcomptemplateempty/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qconfigurationservice",
+      "id": 171,
+      "name": "QConfigurationService",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qconfigurationservice.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qconfigurationservice.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qconfigurationservice/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qconfigurationservice_g2b_test",
+      "id": 114,
+      "name": "QConfigurationService_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qconfigurationservice_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qconfigurationservice_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qconfigurationservice_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qconfigurationserviceexample",
+      "id": 195,
+      "name": "QConfigurationServiceExample",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qconfigurationserviceexample.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qconfigurationserviceexample.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qconfigurationserviceexample/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qconfigurationserviceexample_g2b_test",
+      "id": 138,
+      "name": "QConfigurationServiceExample_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qconfigurationserviceexample_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qconfigurationserviceexample_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qconfigurationserviceexample_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcorbainterfaces",
+      "id": 169,
+      "name": "QCorbaInterfaces",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcorbainterfaces.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcorbainterfaces.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcorbainterfaces/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcorbainterfaces_g2b_test",
+      "id": 112,
+      "name": "QCorbaInterfaces_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qcorbainterfaces_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qcorbainterfaces_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qcorbainterfaces_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcorejava",
+      "id": 167,
+      "name": "QCoreJava",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcorejava.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcorejava.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcorejava/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcorejava_g2b_test",
+      "id": 110,
+      "name": "QCoreJava_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qcorejava_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qcorejava_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qcorejava_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qcreationtest",
+      "id": 51,
+      "name": "QCreationTest",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qcreationtest.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qcreationtest.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qcreationtest/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qdeeplearningengine",
+      "id": 204,
+      "name": "QDeepLearningEngine",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qdeeplearningengine.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qdeeplearningengine.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qdeeplearningengine/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qdeeplearningengine_g2b_test",
+      "id": 147,
+      "name": "QDeepLearningEngine_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qdeeplearningengine_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qdeeplearningengine_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qdeeplearningengine_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qdistributeddatastorage",
+      "id": 183,
+      "name": "QDistributedDataStorage",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qdistributeddatastorage.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qdistributeddatastorage.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qdistributeddatastorage/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qdistributeddatastorage_g2b_test",
+      "id": 126,
+      "name": "QDistributedDataStorage_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qdistributeddatastorage_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qdistributeddatastorage_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qdistributeddatastorage_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qebicalibrations",
+      "id": 209,
+      "name": "QEBICalibrations",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qebicalibrations.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qebicalibrations.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qebicalibrations/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qebicalibrations_g2b_test",
+      "id": 152,
+      "name": "QEBICalibrations_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qebicalibrations_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qebicalibrations_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qebicalibrations_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qeiq",
+      "id": 177,
+      "name": "QEIQ",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qeiq.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qeiq.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qeiq/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qeiq_g2b_test",
+      "id": 120,
+      "name": "QEIQ_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qeiq_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qeiq_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qeiq_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qeiq_mainwf",
+      "id": 228,
+      "name": "QEIQ_mainwf",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qeiq_mainwf.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qeiq_mainwf.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qeiq_mainwf/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qexercise",
+      "id": 196,
+      "name": "QExercise",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qexercise.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qexercise.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qexercise/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qexercise_g2b_test",
+      "id": 139,
+      "name": "QExercise_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qexercise_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qexercise_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qexercise_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qexeutils",
+      "id": 187,
+      "name": "QExeUtils",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qexeutils.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qexeutils.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qexeutils/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qexeutils_g2b_test",
+      "id": 130,
+      "name": "QExeUtils_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qexeutils_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qexeutils_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qexeutils_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qgeometryserver",
+      "id": 176,
+      "name": "QGeometryServer",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qgeometryserver.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qgeometryserver.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qgeometryserver/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qgeometryserver_g2b_test",
+      "id": 119,
+      "name": "QGeometryServer_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qgeometryserver_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qgeometryserver_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qgeometryserver_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qgeometryutils",
+      "id": 175,
+      "name": "QGeometryUtils",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qgeometryutils.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qgeometryutils.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qgeometryutils/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qgeometryutils_g2b_test",
+      "id": 118,
+      "name": "QGeometryUtils_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qgeometryutils_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qgeometryutils_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qgeometryutils_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qhelloworld",
+      "id": 166,
+      "name": "QHelloWorld",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qhelloworld.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qhelloworld.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qhelloworld/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qhelloworld_citest",
+      "id": 47,
+      "name": "QHelloWorld_CITEST",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qhelloworld_citest.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qhelloworld_citest.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qhelloworld_citest/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qhelloworld_g2b_test",
+      "id": 109,
+      "name": "QHelloWorld_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qhelloworld_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qhelloworld_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qhelloworld_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qhms",
+      "id": 184,
+      "name": "QHMS",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qhms.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qhms.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qhms/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qhms_g2b_test",
+      "id": 127,
+      "name": "QHMS_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qhms_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qhms_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qhms_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qidm",
+      "id": 222,
+      "name": "QIDM",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qidm.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qidm.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qidm/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qinfraservices",
+      "id": 170,
+      "name": "QInfraServices",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qinfraservices.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qinfraservices.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qinfraservices/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qinfraservices_g2b_test",
+      "id": 113,
+      "name": "QInfraServices_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qinfraservices_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qinfraservices_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qinfraservices_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qinspectionapplications",
+      "id": 239,
+      "name": "QInspectionApplications",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qinspectionapplications.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qinspectionapplications.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qinspectionapplications/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qipostprocessor",
+      "id": 174,
+      "name": "QIPostProcessor",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qipostprocessor.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qipostprocessor.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qipostprocessor/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qipostprocessor_g2b_test",
+      "id": 117,
+      "name": "QIPostProcessor_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qipostprocessor_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qipostprocessor_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qipostprocessor_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qkdb",
+      "id": 207,
+      "name": "QKDB",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qkdb.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qkdb.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qkdb/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qkdb_g2b_test",
+      "id": 150,
+      "name": "QKDB_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qkdb_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qkdb_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qkdb_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qmatlab",
+      "id": 214,
+      "name": "QMatlab",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qmatlab.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qmatlab.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qmatlab/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qmatlab_g2b_test",
+      "id": 157,
+      "name": "QMatlab_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qmatlab_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qmatlab_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qmatlab_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qmessaging",
+      "id": 185,
+      "name": "QMessaging",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qmessaging.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qmessaging.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qmessaging/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qmessaging_g2b_test",
+      "id": 128,
+      "name": "QMessaging_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qmessaging_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qmessaging_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qmessaging_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qmetrologysetup",
+      "id": 227,
+      "name": "QMetrologySetup",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qmetrologysetup.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qmetrologysetup.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qmetrologysetup/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qmetrologysetup_g2b_test",
+      "id": 161,
+      "name": "QMetrologySetup_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qmetrologysetup_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qmetrologysetup_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qmetrologysetup_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qmetrologysetup_to_delete",
+      "id": 218,
+      "name": "QMetrologySetup_to_delete",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qmetrologysetup_to_delete.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qmetrologysetup_to_delete.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qmetrologysetup_to_delete/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qotfclustering",
+      "id": 232,
+      "name": "QOTFClustering",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qotfclustering.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qotfclustering.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qotfclustering/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qovlpost",
+      "id": 226,
+      "name": "QOVLPost",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qovlpost.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qovlpost.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qovlpost/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qovlpost2",
+      "id": 242,
+      "name": "QOVLPost2",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qovlpost2.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qovlpost2.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qovlpost2/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpdcrecipedal",
+      "id": 181,
+      "name": "QPDCRecipeDAL",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qpdcrecipedal.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qpdcrecipedal.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qpdcrecipedal/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpdcrecipedal_g2b_test",
+      "id": 124,
+      "name": "QPDCRecipeDAL_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qpdcrecipedal_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qpdcrecipedal_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qpdcrecipedal_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qplatform",
+      "id": 178,
+      "name": "QPlatform",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qplatform.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qplatform.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qplatform/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qplatform_g2b_test",
+      "id": 121,
+      "name": "QPlatform_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qplatform_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qplatform_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qplatform_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qprism",
+      "id": 173,
+      "name": "QPrism",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qprism.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qprism.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qprism/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qprism_g2b_test",
+      "id": 116,
+      "name": "QPrism_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qprism_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qprism_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qprism_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qprvalg",
+      "id": 213,
+      "name": "QPRVAlg",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qprvalg.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qprvalg.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qprvalg/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qprvalg_g2b_test",
+      "id": 156,
+      "name": "QPRVAlg_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qprvalg_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qprvalg_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qprvalg_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpyalgobf",
+      "id": 246,
+      "name": "QPyAlgoBF",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qpyalgobf.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qpyalgobf.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qpyalgobf/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpycompositews",
+      "id": 236,
+      "name": "QPyCompositeWS",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qpycompositews.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qpycompositews.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qpycompositews/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythoncppconnectivity",
+      "id": 197,
+      "name": "QPythonCppConnectivity",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qpythoncppconnectivity.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qpythoncppconnectivity.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qpythoncppconnectivity/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythoncppconnectivity_g2b_test",
+      "id": 140,
+      "name": "QPythonCppConnectivity_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qpythoncppconnectivity_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qpythoncppconnectivity_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qpythoncppconnectivity_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythonexamples",
+      "id": 200,
+      "name": "QPythonExamples",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qpythonexamples.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qpythonexamples.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qpythonexamples/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythonexamples_g2b_test",
+      "id": 143,
+      "name": "QPythonExamples_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qpythonexamples_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qpythonexamples_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qpythonexamples_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythoninfra",
+      "id": 198,
+      "name": "QPythonInfra",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qpythoninfra.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qpythoninfra.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qpythoninfra/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythoninfra_g2b_test",
+      "id": 141,
+      "name": "QPythonInfra_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qpythoninfra_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qpythoninfra_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qpythoninfra_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythonprojectskeleton",
+      "id": 199,
+      "name": "QPythonProjectSkeleton",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qpythonprojectskeleton.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qpythonprojectskeleton.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qpythonprojectskeleton/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythonprojectskeleton_g2b_test",
+      "id": 142,
+      "name": "QPythonProjectSkeleton_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qpythonprojectskeleton_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qpythonprojectskeleton_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qpythonprojectskeleton_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythontestingfw",
+      "id": 193,
+      "name": "QPythonTestingFW",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qpythontestingfw.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qpythontestingfw.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qpythontestingfw/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qpythontestingfw_g2b_test",
+      "id": 136,
+      "name": "QPythonTestingFW_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qpythontestingfw_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qpythontestingfw_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qpythontestingfw_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qrecipedal",
+      "id": 180,
+      "name": "QRecipeDAL",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qrecipedal.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qrecipedal.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qrecipedal/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qrecipedal_g2b_test",
+      "id": 123,
+      "name": "QRecipeDAL_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qrecipedal_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qrecipedal_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qrecipedal_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qrma",
+      "id": 188,
+      "name": "QRMA",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qrma.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qrma.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qrma/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qrma_g2b_test",
+      "id": 131,
+      "name": "QRMA_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qrma_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qrma_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qrma_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qsemapplicationservices",
+      "id": 211,
+      "name": "QSEMApplicationServices",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qsemapplicationservices.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qsemapplicationservices.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qsemapplicationservices/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qsemapplicationservices_g2b_test",
+      "id": 154,
+      "name": "QSEMApplicationServices_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qsemapplicationservices_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qsemapplicationservices_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qsemapplicationservices_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qsempost",
+      "id": 212,
+      "name": "QSEMPost",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qsempost.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qsempost.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qsempost/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qsempost_g2b_test",
+      "id": 155,
+      "name": "QSEMPost_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qsempost_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qsempost_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qsempost_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qstorageserver",
+      "id": 179,
+      "name": "QStorageServer",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qstorageserver.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qstorageserver.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qstorageserver/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qstorageserver_g2b_test",
+      "id": 122,
+      "name": "QStorageServer_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qstorageserver_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qstorageserver_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qstorageserver_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qsystemtools",
+      "id": 17,
+      "name": "QSystemTools",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "DEVOPS",
+        "id": 44,
+        "name": "DevOps",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVOPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devops/qsystemtools.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/devops/qsystemtools.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVOPS/repos/qsystemtools/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtemplates",
+      "id": 164,
+      "name": "QTemplates",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qtemplates.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qtemplates.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qtemplates/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtemplates",
+      "id": 216,
+      "name": "QTemplates",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qtemplates.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qtemplates.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qtemplates/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtemplates_g2b_test",
+      "id": 159,
+      "name": "QTemplates_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qtemplates_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qtemplates_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qtemplates_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtensorflowalgos",
+      "id": 186,
+      "name": "QTensorFlowAlgos",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qtensorflowalgos.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qtensorflowalgos.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qtensorflowalgos/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtensorflowalgos_g2b_test",
+      "id": 129,
+      "name": "QTensorFlowAlgos_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qtensorflowalgos_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qtensorflowalgos_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qtensorflowalgos_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtestautomationinfra",
+      "id": 206,
+      "name": "QTestAutomationInfra",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qtestautomationinfra.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qtestautomationinfra.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qtestautomationinfra/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtestautomationinfra_g2b_test",
+      "id": 149,
+      "name": "QTestAutomationInfra_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qtestautomationinfra_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qtestautomationinfra_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qtestautomationinfra_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtestautomationutils",
+      "id": 205,
+      "name": "QTestAutomationUtils",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qtestautomationutils.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qtestautomationutils.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qtestautomationutils/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtestautomationutils_g2b_test",
+      "id": 148,
+      "name": "QTestAutomationUtils_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qtestautomationutils_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qtestautomationutils_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qtestautomationutils_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtoolwebwidgets",
+      "id": 192,
+      "name": "QToolWebWidgets",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qtoolwebwidgets.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qtoolwebwidgets.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qtoolwebwidgets/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtoolwebwidgets_g2b_test",
+      "id": 135,
+      "name": "QToolWebWidgets_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qtoolwebwidgets_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qtoolwebwidgets_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qtoolwebwidgets_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtula",
+      "id": 208,
+      "name": "QTula",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qtula.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qtula.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qtula/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qtula_g2b_test",
+      "id": 151,
+      "name": "QTula_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qtula_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qtula_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qtula_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qwinglinuxkernel",
+      "id": 201,
+      "name": "QWingLinuxKernel",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qwinglinuxkernel.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qwinglinuxkernel.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qwinglinuxkernel/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qwinglinuxkernel_g2b_test",
+      "id": 144,
+      "name": "QWingLinuxKernel_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qwinglinuxkernel_g2b_test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qwinglinuxkernel_g2b_test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qwinglinuxkernel_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qwiresultsdal",
+      "id": 217,
+      "name": "QWIResultsDal",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qwiresultsdal.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qwiresultsdal.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qwiresultsdal/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qwiresultsdal_g2b_test",
+      "id": 160,
+      "name": "QWIResultsDal_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qwiresultsdal_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qwiresultsdal_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qwiresultsdal_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qwiscanner",
+      "id": 215,
+      "name": "QWIScanner",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qwiscanner.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qwiscanner.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qwiscanner/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qwiscanner_g2b_test",
+      "id": 158,
+      "name": "QWIScanner_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qwiscanner_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qwiscanner_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qwiscanner_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qzeus",
+      "id": 172,
+      "name": "QZeus",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS",
+        "id": 65,
+        "name": "comps",
+        "description": "All Q comps http://dcilpa317:8090/display/PDC/Live+components+out-here",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/comps/qzeus.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps/qzeus.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS/repos/qzeus/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "qzeus_g2b_test",
+      "id": 115,
+      "name": "QZeus_g2b_test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "COMPS_TEST",
+        "id": 145,
+        "name": "comps_test",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/COMPS_TEST"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/comps_test/qzeus_g2b_test.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/comps_test/qzeus_g2b_test.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/COMPS_TEST/repos/qzeus_g2b_test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "r2g",
+      "id": 14,
+      "name": "r2g",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "MON",
+        "id": 42,
+        "name": "mon",
+        "description": "All Monolith repos",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/MON"
+            }
+          ]
+        }
+      },
+      "public": true,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/mon/r2g.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/mon/r2g.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/MON/repos/r2g/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "r2g_2",
+      "id": 29,
+      "name": "r2g_2",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "MON",
+        "id": 42,
+        "name": "mon",
+        "description": "All Monolith repos",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/MON"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/mon/r2g_2.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/mon/r2g_2.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/MON/repos/r2g_2/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "r2g_auto_mirror_backup",
+      "id": 34,
+      "name": "r2g_auto_mirror_backup",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "MON",
+        "id": 42,
+        "name": "mon",
+        "description": "All Monolith repos",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/MON"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/mon/r2g_auto_mirror_backup.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/mon/r2g_auto_mirror_backup.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/MON/repos/r2g_auto_mirror_backup/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "r2g_latest",
+      "id": 50,
+      "name": "r2g_latest",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "MON",
+        "id": 42,
+        "name": "mon",
+        "description": "All Monolith repos",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/MON"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/mon/r2g_latest.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/mon/r2g_latest.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/MON/repos/r2g_latest/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "semuraiautomation",
+      "id": 23,
+      "name": "SEMuraiAutomation",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "~ZSHWARTZBLATX092728",
+        "id": 47,
+        "name": "Ziv Shwartzblat --TR-CNTR",
+        "type": "PERSONAL",
+        "owner": {
+          "name": "ZShwartzblatX092728",
+          "emailAddress": "Ziv_Shwartzblat@contractor.amat.com",
+          "id": 744,
+          "displayName": "Ziv Shwartzblat --TR-CNTR",
+          "active": true,
+          "slug": "zshwartzblatx092728",
+          "type": "NORMAL",
+          "links": {
+            "self": [
+              {
+                "href": "https://dcilpa670/users/zshwartzblatx092728"
+              }
+            ]
+          }
+        },
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/users/zshwartzblatx092728"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/~zshwartzblatx092728/semuraiautomation.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/~zshwartzblatx092728/semuraiautomation.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/users/zshwartzblatx092728/repos/semuraiautomation/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "semuraiautomation",
+      "id": 24,
+      "name": "SEMuraiAutomation",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "CD",
+        "id": 62,
+        "name": "CD",
+        "description": "CD SEMurai",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/CD"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/cd/semuraiautomation.git",
+            "name": "http"
+          },
+          {
+            "href": "ssh://git@dcilpa670:7999/cd/semuraiautomation.git",
+            "name": "ssh"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/CD/repos/semuraiautomation/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "semuraitests",
+      "id": 27,
+      "name": "SEMuraiTests",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "CD",
+        "id": 62,
+        "name": "CD",
+        "description": "CD SEMurai",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/CD"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/cd/semuraitests.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/cd/semuraitests.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/CD/repos/semuraitests/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "semuraiutilities",
+      "id": 33,
+      "name": "SEMuraiUtilities",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "CD",
+        "id": 62,
+        "name": "CD",
+        "description": "CD SEMurai",
+        "public": true,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/CD"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/cd/semuraiutilities.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/cd/semuraiutilities.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/CD/repos/semuraiutilities/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "test",
+      "id": 45,
+      "name": "test",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "~NSAFRAX076636",
+        "id": 128,
+        "name": "Noach Safra --TR-CNTR",
+        "type": "PERSONAL",
+        "owner": {
+          "name": "NSafraX076636",
+          "emailAddress": "Noach_Safra@contractor.amat.com",
+          "id": 983,
+          "displayName": "Noach Safra --TR-CNTR",
+          "active": true,
+          "slug": "nsafrax076636",
+          "type": "NORMAL",
+          "links": {
+            "self": [
+              {
+                "href": "https://dcilpa670/users/nsafrax076636"
+              }
+            ]
+          }
+        },
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/users/nsafrax076636"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/~nsafrax076636/test.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/~nsafrax076636/test.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/users/nsafrax076636/repos/test/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "test_branch_permissions",
+      "id": 244,
+      "name": "test_branch_permissions",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "TMP",
+        "id": 172,
+        "name": "Temporary_Repos",
+        "description": "Temporary repositories used for testing stuff and are not intended to persist (as in would be deleted after some time).",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/TMP"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/tmp/test_branch_permissions.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/tmp/test_branch_permissions.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/TMP/repos/test_branch_permissions/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "testssh",
+      "id": 46,
+      "name": "testssh",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "DEVOPS",
+        "id": 44,
+        "name": "DevOps",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/DEVOPS"
+            }
+          ]
+        }
+      },
+      "public": true,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/devops/testssh.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/devops/testssh.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/DEVOPS/repos/testssh/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "yael_repo1",
+      "id": 1,
+      "name": "yael_repo1",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": false,
+      "project": {
+        "key": "YAEL",
+        "id": 1,
+        "name": "yael_proj",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/YAEL"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/yael/yael_repo1.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/yael/yael_repo1.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/YAEL/repos/yael_repo1/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "yael_repo2",
+      "id": 32,
+      "name": "yael_repo2",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "YAEL",
+        "id": 1,
+        "name": "yael_proj",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/YAEL"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/yael/yael_repo2.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/yael/yael_repo2.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/YAEL/repos/yael_repo2/browse"
+          }
+        ]
+      }
+    },
+    {
+      "slug": "yael_repo3",
+      "id": 163,
+      "name": "yael_repo3",
+      "scmId": "git",
+      "state": "AVAILABLE",
+      "statusMessage": "Available",
+      "forkable": true,
+      "project": {
+        "key": "YAEL",
+        "id": 1,
+        "name": "yael_proj",
+        "public": false,
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://dcilpa670/projects/YAEL"
+            }
+          ]
+        }
+      },
+      "public": false,
+      "links": {
+        "clone": [
+          {
+            "href": "ssh://git@dcilpa670:7999/yael/yael_repo3.git",
+            "name": "ssh"
+          },
+          {
+            "href": "https://BNahum90789@dcilpa670/scm/yael/yael_repo3.git",
+            "name": "http"
+          }
+        ],
+        "self": [
+          {
+            "href": "https://dcilpa670/projects/YAEL/repos/yael_repo3/browse"
+          }
+        ]
+      }
+    }
+  ],
+  "start": 0
+}

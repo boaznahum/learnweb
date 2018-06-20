@@ -1,5 +1,10 @@
-.App {
 
+body {
+    // ?
+    margin: 0px;
+}
+
+.wrapper {
     display: grid;
     /*grid-gap: 0;*/
     grid-column-gap: 0.5vh;
@@ -9,38 +14,19 @@
     background-color: #fff;
     color: #444;
 
-    /*fil all https://stackoverflow.com/questions/43747185/force-css-grid-container-to-fill-full-screen-of-device*/
+     /*fil all https://stackoverflow.com/questions/43747185/force-css-grid-container-to-fill-full-screen-of-device*/
 
     /*This include gap above !!!*/
     width: 99.5vw;
-    height: 99vh;
+    height: 99.5vh;
+
 }
 
-.Remote, .Local, .Terminal {
+.box {
     background-color: #444;
     color: #fff;
     border-radius: 5px;
     padding: 20px;
     font-size: 150%;
-}
-
-
-
-.xxHistoryRow {
-    border: 2px solid black;
-}
-/* td */
-.xxxHistoryImage {
-    
-    align: center;
-    border: 3px;
 
 }
-
-/* tr */
-.xxTerminal {
-
-
-
-}
-
