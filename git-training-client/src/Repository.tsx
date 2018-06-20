@@ -3,6 +3,7 @@ import {Component} from "react";
 
 
 const IMAGE_URL = "http://localhost:8080/image";
+const IMAGE_ID_URL = "http://localhost:8080/imageID";
 
 // https://blog.hellojs.org/fetching-api-data-with-react-js-460fe8bbf8f2
 
@@ -20,34 +21,31 @@ interface IData {
 interface IState {
     data: IData;
     image: string;
+    imageRefreshID: string;
 }
 
 
 class Repository extends Component<IProps, IState> {
-
-    private imageRefreshID: string;
-
 
     constructor(props: IProps) {
         super(props);
 
         this.state = {
             data: {id: "", content: ""},
-            image: ""
+            image: "",
+            imageRefreshID: ""
         };
 
-        this.imageRefreshID = "";
 
     }
 
     // https://developer.okta.com/blog/2017/12/06/bootiful-development-with-spring-boot-and-react
     public componentDidMount() {
 
-        this.fetchImage();
+        this.fetchImageID();
 
         setInterval(() => {
-            this.imageRefreshID = new Date().toTimeString();
-            this.fetchImage();
+            this.fetchImageID();
         }, 3000);
 
     }
@@ -55,10 +53,12 @@ class Repository extends Component<IProps, IState> {
 
     public render() {
 
+        const id = this.state.imageRefreshID;
+
+        const imageURL = IMAGE_URL + "?sessionID=1&repoID=" + this.props.repoID + "&dummy=" + encodeURIComponent(id);
+
         let img = null;
-        if (this.state.image) {
-            img = <img  src={this.state.image}/>
-        }
+        img = <img src={imageURL}/>
 
         return (
             <table className="Repository">
@@ -73,9 +73,29 @@ class Repository extends Component<IProps, IState> {
         );
     }
 
+    private fetchImageID() {
+
+        const uniqueID = new Date().toTimeString();
+        const imageURL = IMAGE_ID_URL + "?sessionID=1&repoID=" + this.props.repoID + "&dummy=" +
+            encodeURIComponent(uniqueID);
+
+        // https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api
+        fetch(imageURL)
+            .then(res => {
+                return res.text();
+            })
+            .then(res => {
+
+                const id: string = res.toString();
+
+                this.setState({imageRefreshID: id});
+            });
+    }
+
+    /*
     private fetchImage() {
 
-        const imageURL = IMAGE_URL + "?sessionID=1&repoID=" + this.props.repoID + "&dummy=" + this.imageRefreshID;
+        const imageURL = IMAGE_URL + "?sessionID=1&repoID=" + this.props.repoID + "&dummy=" + encodeURIComponent(this.imageRefreshID);
 
         // https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api
         fetch(imageURL)
@@ -87,6 +107,7 @@ class Repository extends Component<IProps, IState> {
                 this.setState({image: URL.createObjectURL(res)});
             });
     }
+    */
 
 }
 

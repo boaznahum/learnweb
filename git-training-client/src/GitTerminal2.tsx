@@ -11,15 +11,24 @@ import 'react-console-component/main.css';
 
 const RUN_COMMAND_URL = "http://localhost:8080/runCommand";
 
+enum RepoID {
+
+    L1,
+    L2,
+    R
+
+}
+
 interface IGTerminalState {
     // 1 - local 1, 2 - local 2, 3 - remote
-    currentRepo: number;
+    currentRepo: RepoID;
 }
 
 interface IGTerminalProps {
     // 1 - local 1, 2 - local 2, 3 - remote
     sessionID: string;
 }
+
 
 class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
 
@@ -32,7 +41,7 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
         super(props);
 
         this.state = {
-            currentRepo: 1,
+            currentRepo: RepoID.L1
         };
     }
 
@@ -43,7 +52,7 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
         return <Console ref={ref => this.child.console = ref}
                         handler={this.handler}
                         promptLabel={this.promptLabel}
-                        welcomeMessage={"Welcome to the react-console demo!\nThis is an example of a simple echo console."}
+                        // welcomeMessage={"Welcome to the react-console demo!\nThis is an example of a simple echo console."}
                         autofocus={true}
         />;
     }
@@ -60,14 +69,14 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
         );
 
         if (text === "1") {
-            this.setState({currentRepo:1});
+            this.setState({currentRepo:RepoID.L1});
             return;
         } else if (text === "2") {
-            this.setState({currentRepo:2});
+            this.setState({currentRepo:RepoID.L2});
             return;
         }
-        if (text === "3") {
-            this.setState({currentRepo:3});
+        if (text.toLowerCase() === "r") {
+            this.setState({currentRepo:RepoID.R});
             return;
         } else {
             this.runCommand(text);
@@ -76,6 +85,18 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
     };
 
     private promptLabel = () => {
+
+        switch (this.state.currentRepo) {
+            case RepoID.L1:
+                return "L1>";
+
+            case RepoID.L2:
+                return "L2>";
+
+            case RepoID.R:
+                return "R>";
+        }
+
         return this.state.currentRepo + "> ";
     };
 
@@ -88,15 +109,15 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
 
         switch (this.state.currentRepo) {
 
-            case 1:
+            case RepoID.L1:
                 repoID = "local1";
                 break;
 
-            case 2:
+            case RepoID.L2:
                 repoID = "local2";
                 break;
 
-            case 3:
+            case RepoID.R:
                 repoID = "remote";
                 break;
 

@@ -9,6 +9,8 @@ import java.util.concurrent.ExecutionException;
 
 public interface TrainingSession {
 
+    long getImageID(String repoID) throws IOException;
+
     byte[] getImage(String repoID) throws IOException;
 
     String runCommand(String repoID, String command) throws IOException, ExecutionException, InterruptedException;

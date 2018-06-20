@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.util.Scanner;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author Boaz Nahum
@@ -22,10 +23,20 @@ class TrainingSessionImp implements TrainingSession {
     }
 
     @Override
+    public long getImageID(String repoID) throws IOException {
+
+        Path imagePath = getImagePath(repoID);
+
+
+        return Files.getLastModifiedTime(imagePath).to(TimeUnit.MICROSECONDS);
+
+    }
+
+    @Override
     public byte[] getImage(String repoID) throws IOException {
 
 
-        Path imagePath = baseDir.resolve("out").resolve(repoID + ".png");
+        Path imagePath = getImagePath(repoID);
 
 
 
@@ -42,6 +53,10 @@ class TrainingSessionImp implements TrainingSession {
         }
 
 
+    }
+
+    private Path getImagePath(String repoID) {
+        return baseDir.resolve("out").resolve(repoID + ".png");
     }
 
     @Override
