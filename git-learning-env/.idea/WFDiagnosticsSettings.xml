@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WFDiagnosticsSettings">
+    <option name="default" value="false" />
+    <option name="diagnosticsAnnotation" value="wf.core_tool.tool.diagnostics.annotation.DiagnosticsInfo" />
+    <option name="moduleClass" value="wf.core_tool.tool.module.Module" />
+    <option name="propertiesFileName" value="DiagnosticsAnnotationVersion.properties" />
+    <option name="removeDiagnosticsAnnotation" value="wf.core_tool.tool.diagnostics.annotation.RemoveFromDiagnostics" />
+  </component>
+</project>
