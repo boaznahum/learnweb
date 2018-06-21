@@ -1,0 +1,52 @@
+
+
+
+
+Dev:
+
+ In web-client
+
+     npm install
+     npm start
+
+ In print-rest-server
+
+   Install gradle wrapper (installed by IntelliJ also)
+
+   setenv JAVA_HOME 'F:\AmatSW\shared\SDKs\JDKs\1.8.x\1.8.0_152x64'
+
+   ./gradlew.bat bootrun
+
+
+
+
+
+
+
+
+Production:
+
+  Client:
+    npm run build
+    npm install -g serve
+    rehash
+    serve -s build
+
+
+
+
+  Server:
+
+     setenv JAVA_HOME 'F:\AmatSW\shared\SDKs\JDKs\1.8.x\1.8.0_152x64'
+
+    ./gradlew.bat bootJar
+
+    $JAVA_HOME/bin/java -jar build/libs/gs-rest-service-0.1.0.jar
+
+
+
+
+
+
+
+

@@ -22,6 +22,8 @@
       <module name="sprint-rest-derver-1_test" target="1.8" />
       <module name="sprint-rest-server-1_main" target="1.8" />
       <module name="sprint-rest-server-1_test" target="1.8" />
+      <module name="sprint-rest-server_main" target="1.8" />
+      <module name="sprint-rest-server_test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="EclipseCompilerSettings">

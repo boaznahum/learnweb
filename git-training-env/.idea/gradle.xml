@@ -3,12 +3,12 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="WRAPPED" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/sprint-rest-server-1" />
-        <option name="gradleJvm" value="jdk_1.8.0_152x64" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/sprint-rest-server" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../QcoreJava/Qlinks/cmn/gradle" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/sprint-rest-server-1" />
+            <option value="$PROJECT_DIR$/sprint-rest-server" />
           </set>
         </option>
       </GradleProjectSettings>
