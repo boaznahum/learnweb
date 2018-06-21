@@ -1,0 +1,69 @@
+enable eslint:
+
+  npm --save-dev eslint
+
+   in setting pont to
+   F:\views\g\LearnWeb\learnweb\learning\react-redux-type-script\node_modules\eslint
+   reopen project
+
+   npm install --save-dev eslint-plugin-react
+   npm install --save-dev babel-eslint
+
+   .eslintrc
+    {
+      "plugins": [
+        "react"
+      ],
+      "parser": "babel-eslint",
+      "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+      ],
+      "parserOptions": {
+        "ecmaFeatures": {
+          "jsx": true,
+          "modules": true
+        }
+      },
+      "env": {
+        "browser": true
+      },
+      "rules": {
+        "semi": [
+          "warn",
+          "always"
+        ]
+      }
+    }
+
+
+
+
+
+DB: https://stormpath.com/blog/crud-application-react-spring-boot-user-authentication
+
+DB: https://www.djamware.com/post/5ab6397c80aca714d19d5b9c/building-spring-boot-mongodb-and-reactjs-crud-web-application
+
+
+https://www.fullstackreact.com/articles/using-create-react-app-with-a-server/
+
+
+add react to existing https://reactjs.org/docs/add-react-to-an-existing-app.html#installing-react
+
+
+react with Type script:
+    Create react type script app:
+        https://github.com/Microsoft/TypeScript-React-Starter
+        create-react-app my-app --scripts-version=react-scripts-ts
+
+    tslint configuration:
+
+
+
+redux with types script
+
+    https://medium.com/@nem121/todo-app-with-typescript-redux-e6a4c2f02079
+    https://dzone.com/articles/using-typescript-with-redux
+
+
+
