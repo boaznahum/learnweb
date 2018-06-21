@@ -52,34 +52,43 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
         return <Console ref={ref => this.child.console = ref}
                         handler={this.handler}
                         promptLabel={this.promptLabel}
-                        // welcomeMessage={"Welcome to the react-console demo!\nThis is an example of a simple echo console."}
+            // welcomeMessage={"Welcome to the react-console demo!\nThis is an example of a simple echo console."}
                         autofocus={true}
         />;
+    }
+
+
+    private setStateAfterCommand(newState: any) {
+
+        // @ts-ignore
+        this.setState(newState,
+            // @ts-ignore
+            this.child.console.return
+        );
+
     }
 
     private handler = (text: string) => {
 
 
-        // @ts-ignore
-        // this.child.console.log(text);
-        // @ts-ignore
-        this.setState({},
-            // @ts-ignore
-            this.child.console.return
-        );
+        if (text === "") {
+            this.setStateAfterCommand({});
+            return;
+        }
 
         if (text === "1") {
-            this.setState({currentRepo:RepoID.L1});
+            this.setStateAfterCommand({currentRepo: RepoID.L1});
             return;
         } else if (text === "2") {
-            this.setState({currentRepo:RepoID.L2});
+            this.setStateAfterCommand({currentRepo: RepoID.L2});
             return;
         }
         if (text.toLowerCase() === "r") {
-            this.setState({currentRepo:RepoID.R});
+            this.setStateAfterCommand({currentRepo: RepoID.R});
             return;
         } else {
             this.runCommand(text);
+            this.setStateAfterCommand({});
         }
 
     };
@@ -127,18 +136,42 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
 
         }
 
-        const imageURL = RUN_COMMAND_URL + "?sessionID=1&repoID=" + repoID + "&command=" + encodeURIComponent(command);
+        const runCommandURL = RUN_COMMAND_URL + "?sessionID=1&repoID=" + repoID + "&command=" + encodeURIComponent(command);
 
         // https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api
-        fetch(imageURL)
+        // @ts-ignore
+        fetch(runCommandURL)
+        // @ts-ignore
             .then(res => {
-                return res.text();
+
+                if (res.ok) {
+                     return res.text();
+                } else {
+
+
+                return res.json();
+                    // const json = res.json();
+                    // // @ts-ignore
+                    // return json;
+                }
+
             })
+            // @ts-ignore
             .then(res => {
                 // this.setState( {data:JSON.stringify(res) });
 
-                // @ts-ignore
-                this.child.console.log(res);
+
+                if (typeof  res === "string") {
+                    // @ts-ignore
+                    this.child.console.log(res);
+
+                } else {
+                    // @ts-ignore
+                    const m = (res as object).message;
+                    // @ts-ignore
+                    this.child.console.log(m);
+                }
+
                 this.setState({},
                     // @ts-ignore
                     this.child.console.return
