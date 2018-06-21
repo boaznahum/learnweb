@@ -25,22 +25,11 @@
 }
 
 
-
-.xxHistoryRow {
-    border: 2px solid black;
-}
-/* td */
-.xxxHistoryImage {
-    
-    align: center;
-    border: 3px;
-
+/* https://jsfiddle.net/nsrfpkb2/8/ */
+.HistoryImage img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-/* tr */
-.xxTerminal {
-
-
-
-}
 

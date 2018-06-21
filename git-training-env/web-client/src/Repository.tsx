@@ -57,19 +57,14 @@ class Repository extends Component<IProps, IState> {
 
         const imageURL = IMAGE_URL + "?sessionID=1&repoID=" + this.props.repoID + "&dummy=" + encodeURIComponent(id);
 
-        let img = null;
-        img = <img src={imageURL}/>
 
         return (
-            <table className="Repository">
-                <tr>
-                    <td><h3>{this.props.name}</h3></td>
-                </tr>
-                <tr className="HistoryRow">
-                    <td className="HistoryImage"> {img}</td>
-                </tr>
+            <div className="HistoryImage">
+                <h3>{this.props.name}</h3>
 
-            </table>
+                <img  src={imageURL}/>
+
+            </div>
         );
     }
 
