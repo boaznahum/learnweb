@@ -5,5 +5,17 @@
       "config/**/*.js",
       "node_modules/**/*.ts"
     ]
+  },
+
+  "rules": {
+
+    "interface-name": [
+      false,
+      "never-prefix"
+    ],
+
+    "object-literal-sort-keys": false,
+
+    "ordered-imports": true
   }
 }

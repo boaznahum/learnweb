@@ -2,7 +2,8 @@ import * as React from 'react';
 import './App.css';
 // @ts-ignore
 import GitTerminal from "./GitTerminal2";
-import Repository from './Repository'
+import {RepoID} from "./repository/Actions";
+import Repository from './repository/Repository'
 
 class App extends React.Component {
     public render() {
@@ -12,7 +13,7 @@ class App extends React.Component {
             <div className="App">
 
                 <div className="Remote">
-                    <Repository repoID="remote" name="Remote" hasConsole={false}/>
+                    <Repository repoID={RepoID.REMOTE} name="Remote" hasConsole={false}/>
                 </div>
 
                 <div className="Terminal">
@@ -20,10 +21,10 @@ class App extends React.Component {
                 </div>
 
                 <div className="Local">
-                    <Repository repoID="local1" name="Local 1" hasConsole={false}/>
+                    <Repository repoID={RepoID.LOCAL1} name="Local 1" hasConsole={false}/>
                 </div>
                 <div className="Local">
-                    <Repository repoID="local2" name="Local 2" hasConsole={false}/>
+                    <Repository repoID={RepoID.LOCAL2} name="Local 2" hasConsole={false}/>
                 </div>
 
 

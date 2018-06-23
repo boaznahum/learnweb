@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/git-training-client/git-training-client.iml" filepath="$PROJECT_DIR$/git-training-client/git-training-client.iml" group="react-rest-1" />
-      <module fileurl="file://$PROJECT_DIR$/my-grid/my-grid.iml" filepath="$PROJECT_DIR$/my-grid/my-grid.iml" group="react-rest-1" />
-      <module fileurl="file://$PROJECT_DIR$/react-use-rest-1/react-use-rest-1.iml" filepath="$PROJECT_DIR$/react-use-rest-1/react-use-rest-1.iml" group="react-rest-1" />
+      <module fileurl="file://$PROJECT_DIR$/references/references.iml" filepath="$PROJECT_DIR$/references/references.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server_main.iml" group="sprint-rest-server" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server_test.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server_test.iml" group="sprint-rest-server" />
