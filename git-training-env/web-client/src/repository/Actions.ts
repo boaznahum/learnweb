@@ -10,7 +10,7 @@ export enum ActionTypes {
     SET_ID = 'SET_ID'
 }
 
-interface RepositoryAction {
+export interface RepositoryAction {
     type:ActionTypes.SET_ID,
     repoID:RepoID
 }
