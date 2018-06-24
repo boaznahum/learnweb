@@ -1,7 +1,7 @@
 import * as React from 'react';
 import './App.css';
 // @ts-ignore
-import GitTerminal from "./GitTerminal2";
+import GitTerminal from "./GitTerminal";
 import {RepoID} from "./repository/Actions";
 import Repository from './repository/Repository'
 
