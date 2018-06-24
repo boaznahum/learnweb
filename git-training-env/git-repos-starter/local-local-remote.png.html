@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        html {
+             height: 100%;
+        }
+        body {
+            min-height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+<table border  style="position: absolute; top: 0; bottom: 0; left: 0; right: 0; width:100%; height:100%">
+    <tr>
+        <td colspan="2" >
+            <h3>Remote</h3>
+
+            <img title=Remote" id="img1id" src="./out/remote.png"/>
+        </td>
+    </tr>
+    <tr>
+        <td width="50%">
+            <h3>Local 1</h3>
+            <img id="img2id" src="./out/local1.png"/>
+        </td>
+
+        <td>
+            <h3>Local 2</h3>
+            <img id="img3id" src="./out/local2.png"/>
+        </td>
+    </tr>
+
+</table>
+
+<script>
+
+
+    //https://stackoverflow.com/questions/1077041/refresh-image-with-a-new-one-at-the-same-url
+    // but there is better solution
+
+    function refreshAll() {
+        // add timestamp to break browser caching
+        document.getElementById("img1id").src = "./out/remote.png?" + new Date().getTime();
+        document.getElementById("img2id").src = "./out/local1.png?" + new Date().getTime();
+        document.getElementById("img3id").src = "./out/local2.png?" + new Date().getTime();
+    }
+
+    // Refresh all images once every 5000ms
+    setInterval(refreshAll, 5000);
+
+
+</script>
+
+
+
+
+
+</body>
+</html>
+
+
+

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/git-repos-starter/git-repos-starter.iml" filepath="$PROJECT_DIR$/git-repos-starter/git-repos-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/references/references.iml" filepath="$PROJECT_DIR$/references/references.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sprint-rest-server_main.iml" filepath="$PROJECT_DIR$/.idea/modules/sprint-rest-server_main.iml" group="sprint-rest-server" />
