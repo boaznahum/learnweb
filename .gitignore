@@ -16,3 +16,5 @@ workspace.xml
 **/.idea/WFPortalNameSettings.xml
 **/.idea/wf_run_local_options.xml
 
+#npm
+node_modules/
