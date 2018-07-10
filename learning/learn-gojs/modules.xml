@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gojs/learn-gojs.iml" filepath="$PROJECT_DIR$/gojs/learn-gojs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/my-grid/my-grid.iml" filepath="$PROJECT_DIR$/my-grid/my-grid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/react-redux-hello-world/react-redux-hello-world.iml" filepath="$PROJECT_DIR$/react-redux-hello-world/react-redux-hello-world.iml" />
+      <module fileurl="file://$PROJECT_DIR$/react-redux-type-script/react-redux-type-script.iml" filepath="$PROJECT_DIR$/react-redux-type-script/react-redux-type-script.iml" />
+      <module fileurl="file://$PROJECT_DIR$/react-use-rest-1/react-use-rest-1.iml" filepath="$PROJECT_DIR$/react-use-rest-1/react-use-rest-1.iml" />
+    </modules>
+  </component>
+</project>

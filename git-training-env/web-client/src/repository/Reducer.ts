@@ -2,7 +2,6 @@ import {Action} from "redux";
 import {ActionTypes, isRepositoryAction, RepoID, SetImageIDAction} from "./Actions";
 
 export interface IRepositoryProps {
-    hasConsole: boolean;
     name: string;
     repoID: RepoID;
 

@@ -3,7 +3,7 @@ import './App.css';
 // @ts-ignore
 import GitTerminal from "./GitTerminal";
 import {RepoID} from "./repository/Actions";
-import Repository from './repository/Repository'
+import Repositories from './repository/Repositories'
 
 class App extends React.Component {
     public render() {
@@ -12,8 +12,11 @@ class App extends React.Component {
 
             <div className="App">
 
+                <Repositories.RepositoriesManager />
+
                 <div className="Remote">
-                    <Repository repoID={RepoID.REMOTE} name="Remote" hasConsole={false}/>
+
+                    { Repositories.createRepoElement({ repoID:RepoID.REMOTE, name:"Remote"})}
                 </div>
 
                 <div className="Terminal">
@@ -21,10 +24,10 @@ class App extends React.Component {
                 </div>
 
                 <div className="Local">
-                    <Repository repoID={RepoID.LOCAL1} name="Local 1" hasConsole={false}/>
+                    { Repositories.createRepoElement({ repoID:RepoID.LOCAL1, name:"Local 1"})}
                 </div>
                 <div className="Local">
-                    <Repository repoID={RepoID.LOCAL2} name="Local 2" hasConsole={false}/>
+                    { Repositories.createRepoElement({ repoID:RepoID.LOCAL2, name:"Local 2"})}
                 </div>
 
 

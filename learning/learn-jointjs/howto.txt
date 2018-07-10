@@ -1,0 +1,2 @@
+
+create-react-app gojs --scripts-version=react-scripts-ts

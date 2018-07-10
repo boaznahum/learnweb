@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/my-grid/my-grid.iml" filepath="$PROJECT_DIR$/my-grid/my-grid.iml" />
-      <module fileurl="file://$PROJECT_DIR$/react-redux-hello-world/react-redux-hello-world.iml" filepath="$PROJECT_DIR$/react-redux-hello-world/react-redux-hello-world.iml" />
-      <module fileurl="file://$PROJECT_DIR$/react-redux-type-script/react-redux-type-script.iml" filepath="$PROJECT_DIR$/react-redux-type-script/react-redux-type-script.iml" />
-      <module fileurl="file://$PROJECT_DIR$/react-use-rest-1/react-use-rest-1.iml" filepath="$PROJECT_DIR$/react-use-rest-1/react-use-rest-1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/learn-jointjs/learn-jointjs.iml" filepath="$PROJECT_DIR$/learn-jointjs/learn-jointjs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/learning.iml" filepath="$PROJECT_DIR$/.idea/learning.iml" />
     </modules>
   </component>
 </project>
