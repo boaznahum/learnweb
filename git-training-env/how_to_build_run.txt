@@ -1,18 +1,13 @@
 
-Need to run ghe git watcher 'services'
-
-  git-repos-starter/*.sh
 
 
 
 Dev:
 
- In web-client
+ Satrter In git-repos-starter
+    start.bat
 
-     npm install
-     npm start
-
- In print-rest-server
+ Server in print-rest-server
 
    Install gradle wrapper (installed by IntelliJ also)
 
@@ -20,6 +15,12 @@ Dev:
 
    ./gradlew.bat bootrun
 
+ Client  In web-client
+
+     npm install
+     npm start
+
+ 
 
 
 
@@ -29,16 +30,10 @@ Dev:
 
 Production:
 
-  Client:
-    npm run build
-    npm install -g serve
-    rehash
-    serve -s build
+ Satrter In git-repos-starter
+    start.bat
 
-
-
-
-  Server:
+ Server in print-rest-server
 
      setenv JAVA_HOME 'F:\AmatSW\shared\SDKs\JDKs\1.8.x\1.8.0_152x64'
 
@@ -46,6 +41,16 @@ Production:
 
     $JAVA_HOME/bin/java -jar build/libs/gs-rest-service-0.1.0.jar
 
+ Client  In web-client
+      npm run build
+      npm install -g serve
+      rehash
+      serve -s build
+
+
+
+
+ 
 
 
 
