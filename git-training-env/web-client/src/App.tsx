@@ -41,7 +41,7 @@ class App extends React.Component<Sig> {
 
                 <Repositories.RepositoriesManager />
 
-                <div className="Remote" >
+                <div className={this.props.currentRepo === RepoID.REMOTE ? "Remote Current" : "Remote"} >
 
                     { Repositories.createRepoElement({ repoID:RepoID.REMOTE, name:remote})}
                 </div>

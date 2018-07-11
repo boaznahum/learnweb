@@ -24,7 +24,7 @@
     font-size: 150%;
 }
 
-.Local.Current {
+.Local.Current, .Remote.Current {
     background-color: green;
 }
 
