@@ -23,5 +23,5 @@ public interface TrainingSession {
      */
     byte[] getImage(String repoID) throws IOException;
 
-    String runCommand(String repoID, String command) throws IOException, ExecutionException, InterruptedException;
+    String runCommandOnRepo(String repoID, String command, boolean waitFor) throws IOException, ExecutionException, InterruptedException;
 }

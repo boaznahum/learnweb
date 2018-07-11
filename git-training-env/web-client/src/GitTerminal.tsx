@@ -65,10 +65,13 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
     private setStateAfterCommand(newState: any) {
 
         // @ts-ignore
-        this.setState(newState,
-            // @ts-ignore
-            this.child.console.return
-        );
+        this.child.console.return()
+
+        // @ts-ignore
+        // this.setState(newState,
+        //     // @ts-ignore
+        //     this.child.console.return
+        // );
 
     }
 
@@ -84,6 +87,7 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
             this.setStateAfterCommand({currentRepo: RepoID.LOCAL1});
             return;
         } else if (text === "2") {
+            this.props.setCurrentRepo(RepoID.LOCAL2);
             this.setStateAfterCommand({currentRepo: RepoID.LOCAL2});
             return;
         }
