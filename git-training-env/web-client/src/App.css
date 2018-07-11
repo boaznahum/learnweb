@@ -24,6 +24,10 @@
     font-size: 150%;
 }
 
+.Local.Current {
+    background-color: green;
+}
+
 
 /* https://jsfiddle.net/nsrfpkb2/8/ */
 .HistoryImage img {

@@ -17,17 +17,21 @@ type Sig = IAppProps & IAppState & {};
 class App extends React.Component<Sig> {
     public render() {
 
-        let name1:string = "Local 1";
-        let name2:string = "Local 2";
-        let remote:string = "Remote";
+        // let name1:string = "Local 1";
+        // let name2:string = "Local 2";
+        // let remote:string = "Remote";
+        //
+        // if (this.props.currentRepo === RepoID.LOCAL1) {
+        //     name1 += "*";
+        // } else if (this.props.currentRepo === RepoID.LOCAL2) {
+        //     name2 += "*";
+        // } if (this.props.currentRepo === RepoID.REMOTE) {
+        //     remote += "*";
+        // }
 
-        if (this.props.currentRepo === RepoID.LOCAL1) {
-            name1 += "*";
-        } else if (this.props.currentRepo === RepoID.LOCAL2) {
-            name2 += "*";
-        } if (this.props.currentRepo === RepoID.REMOTE) {
-            remote += "*";
-        }
+        const name1:string = "Local 1";
+        const name2:string = "Local 2";
+        const remote:string = "Remote";
 
 
         return (
@@ -46,10 +50,10 @@ class App extends React.Component<Sig> {
                     <GitTerminal sessionID={"1"}/>
                 </div>
 
-                <div className="Local">
+                <div className={this.props.currentRepo === RepoID.LOCAL1 ? "Local Current" : "Local"}>
                     { Repositories.createRepoElement({ repoID:RepoID.LOCAL1, name:name1})}
                 </div>
-                <div className="Local">
+                <div className={this.props.currentRepo === RepoID.LOCAL2 ? "Local Current" : "Local"}>
                     { Repositories.createRepoElement({ repoID:RepoID.LOCAL2, name:name2})}
                 </div>
 
