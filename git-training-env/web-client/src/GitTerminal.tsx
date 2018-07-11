@@ -63,13 +63,13 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
     private setStateAfterCommand(newState: any) {
 
         // @ts-ignore
-        // this.child.console.return()
+        this.child.console.return()
 
         // @ts-ignore
-        this.setState(newState,
-            // @ts-ignore
-            this.child.console.return
-        );
+        // this.setState(newState,
+        //     // @ts-ignore
+        //     this.child.console.return
+        // );
 
     }
 
