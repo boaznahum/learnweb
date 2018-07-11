@@ -19,11 +19,14 @@ class App extends React.Component<Sig> {
 
         let name1:string = "Local 1";
         let name2:string = "Local 2";
+        let remote:string = "Remote";
 
         if (this.props.currentRepo === RepoID.LOCAL1) {
             name1 += "*";
         } else if (this.props.currentRepo === RepoID.LOCAL2) {
             name2 += "*";
+        } if (this.props.currentRepo === RepoID.REMOTE) {
+            remote += "*";
         }
 
 
@@ -36,7 +39,7 @@ class App extends React.Component<Sig> {
 
                 <div className="Remote" >
 
-                    { Repositories.createRepoElement({ repoID:RepoID.REMOTE, name:"Remote"})}
+                    { Repositories.createRepoElement({ repoID:RepoID.REMOTE, name:remote})}
                 </div>
 
                 <div className="Terminal">
