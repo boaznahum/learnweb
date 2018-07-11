@@ -3,7 +3,7 @@
 //
 import {Action, combineReducers} from "redux";
 
-import {ActionTypes, RepoID, SetCurrentRepoAction} from "../repository/Actions";
+import {appDefaultState, appReducer, IAppState} from "../AppState";
 import * as Repo from '../repository/Reducer'
 
 
@@ -13,14 +13,16 @@ export interface RootState {
 
     repo:Repo.RepositoriesState
 
-    currentRepo:RepoID
+    app:IAppState
+
+
 }
 
 export const initialState:RootState = {
 
     someDummy:"A dummy to learn",
     repo:Repo.repositoriesInitial,
-    currentRepo:RepoID.LOCAL1
+    app:appDefaultState
 
 };
 
@@ -31,15 +33,6 @@ export function dummy(state: string = "kuku", action: Action) {
 
 }
 
-function currentRepoReducer(currentRepo:RepoID=RepoID.LOCAL1, action: Action):RepoID{
-
-    if(action.type===ActionTypes.SET_CURRENT_REPO){
-        const myAction:SetCurrentRepoAction = action as SetCurrentRepoAction;
-        return myAction.payload.currentRepo;
-
-    }
-    return currentRepo;
-}
 
 /**
  * All the reducers are called, each git its state,
@@ -55,7 +48,7 @@ export const  reducer = combineReducers<RootState>(
         repo:Repo.repositoriesReducer,
 
 
-        currentRepo:currentRepoReducer
+        app:appReducer
     }
 );
 

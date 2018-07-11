@@ -43,17 +43,15 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
 
     constructor(ops: Sig) {
         super(ops);
-
-        this.state = {
-            currentRepo: RepoID.LOCAL1
-        };
     }
 
     public render(): any {
 
+        // key={this.props.currentRepo.toString()}
 
         // @ts-ignore
         return <Console ref={ref => this.child.console = ref}
+                        key={this.props.currentRepo.toString()}
                         handler={this.handler}
                         promptLabel={this.promptLabel}
             // welcomeMessage={"Welcome to the react-console demo!\nThis is an example of a simple echo console."}
@@ -84,6 +82,7 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
         }
 
         if (text === "1") {
+            this.props.setCurrentRepo(RepoID.LOCAL1);
             this.setStateAfterCommand({currentRepo: RepoID.LOCAL1});
             return;
         } else if (text === "2") {
@@ -92,6 +91,7 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
             return;
         }
         if (text.toLowerCase() === "r") {
+            this.props.setCurrentRepo(RepoID.REMOTE);
             this.setStateAfterCommand({currentRepo: RepoID.REMOTE});
             return;
         } else {
@@ -200,7 +200,7 @@ function mapDispatchToProps(dispatch: Dispatch): IGitTerminalActions {
 }
 const mapStateToProps = (state: RootState, ownProps: IGTerminalProps): IGTerminalState => {
 
-    return {currentRepo: state.currentRepo};
+    return {currentRepo: state.app.currentRepo};
 
 };
 
