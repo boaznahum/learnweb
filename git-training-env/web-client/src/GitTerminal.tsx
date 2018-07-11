@@ -1,23 +1,19 @@
 import * as React from 'react';
 import {Component} from "react";
+import {connect, Dispatch} from "react-redux";
 
 
 import Console from 'react-console-component'
 
 import 'react-console-component/main.css';
+import {RepoID, setCurrentRepo} from "./repository/Actions";
+import {RootState} from "./root/reducer";
 
 // https://github.com/autochthe/react-console/blob/master/docs/example/src/example.tsx
 
 
 const RUN_COMMAND_URL = "http://localhost:8080/runCommand";
 
-enum RepoID {
-
-    L1,
-    L2,
-    R
-
-}
 
 interface IGTerminalState {
     // 1 - local 1, 2 - local 2, 3 - remote
@@ -29,19 +25,27 @@ interface IGTerminalProps {
     sessionID: string;
 }
 
+interface IGitTerminalActions {
 
-class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
+    setCurrentRepo(repoID: RepoID): void
+
+}
+
+type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
+
+
+  class GitTerminalUnconnected extends Component<Sig>{
 
 
     private child: {
         console?: Console,
     } = {};
 
-    constructor(props: IGTerminalProps) {
-        super(props);
+    constructor(ops: Sig) {
+        super(ops);
 
         this.state = {
-            currentRepo: RepoID.L1
+            currentRepo: RepoID.LOCAL1
         };
     }
 
@@ -77,14 +81,14 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
         }
 
         if (text === "1") {
-            this.setStateAfterCommand({currentRepo: RepoID.L1});
+            this.setStateAfterCommand({currentRepo: RepoID.LOCAL1});
             return;
         } else if (text === "2") {
-            this.setStateAfterCommand({currentRepo: RepoID.L2});
+            this.setStateAfterCommand({currentRepo: RepoID.LOCAL2});
             return;
         }
         if (text.toLowerCase() === "r") {
-            this.setStateAfterCommand({currentRepo: RepoID.R});
+            this.setStateAfterCommand({currentRepo: RepoID.REMOTE});
             return;
         } else {
             this.runCommand(text);
@@ -95,18 +99,18 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
 
     private promptLabel = () => {
 
-        switch (this.state.currentRepo) {
-            case RepoID.L1:
+        switch (this.props.currentRepo) {
+            case RepoID.LOCAL1:
                 return "L1>";
 
-            case RepoID.L2:
+            case RepoID.LOCAL2:
                 return "L2>";
 
-            case RepoID.R:
+            case RepoID.REMOTE:
                 return "R>";
         }
 
-        return this.state.currentRepo + "> ";
+        return this.props.currentRepo + "> ";
     };
 
 
@@ -116,17 +120,17 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
 
         let repoID: string;
 
-        switch (this.state.currentRepo) {
+        switch (this.props.currentRepo) {
 
-            case RepoID.L1:
+            case RepoID.LOCAL1:
                 repoID = "local1";
                 break;
 
-            case RepoID.L2:
+            case RepoID.LOCAL2:
                 repoID = "local2";
                 break;
 
-            case RepoID.R:
+            case RepoID.REMOTE:
                 repoID = "remote";
                 break;
 
@@ -181,6 +185,25 @@ class GitTerminal extends Component<IGTerminalProps, IGTerminalState> {
 
     }
 }
+function mapDispatchToProps(dispatch: Dispatch): IGitTerminalActions {
+    return {
+
+        setCurrentRepo: (currentRepo: RepoID) => {
+            dispatch(setCurrentRepo(currentRepo));
+        }
+
+    };
+}
+const mapStateToProps = (state: RootState, ownProps: IGTerminalProps): IGTerminalState => {
+
+    return {currentRepo: state.currentRepo};
+
+};
+
+const GitTerminal = connect (
+    mapStateToProps,
+    mapDispatchToProps
+)(GitTerminalUnconnected);
 
 export default GitTerminal;
 

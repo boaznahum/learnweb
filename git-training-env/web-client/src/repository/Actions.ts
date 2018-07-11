@@ -7,7 +7,8 @@ export enum RepoID {
 }
 
 export enum ActionTypes {
-    SET_ID = 'SET_ID'
+    SET_ID = 'SET_ID',
+    SET_CURRENT_REPO = 'SET_CURRENT_REPO'
 }
 
 export interface RepositoryAction {
@@ -27,7 +28,14 @@ export interface SetImageIDAction extends RepositoryAction {
     }
 
 }
+export interface SetCurrentRepoAction {
 
+    type:ActionTypes.SET_CURRENT_REPO
+    payload: {
+        currentRepo:RepoID;
+    }
+
+}
 
 export function setImageID(repoID:RepoID, imageID:string) : SetImageIDAction {
     return {
@@ -38,4 +46,11 @@ export function setImageID(repoID:RepoID, imageID:string) : SetImageIDAction {
         }
     }
 }
-
+export function setCurrentRepo(curRepo:RepoID){
+    return {
+        type:ActionTypes.SET_CURRENT_REPO,
+        payload:{
+            currentRepo:curRepo
+        }
+    }
+}
