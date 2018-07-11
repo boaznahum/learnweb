@@ -151,6 +151,8 @@ class TrainingSessionImp implements TrainingSession {
         // create 3 repositories
         // put watch on each
 
+        removeSessionDir();
+
         createRepo(REMOTE, true);
         cloneLocalRepo(REMOTE, LOCAL1);
         cloneLocalRepo(REMOTE, LOCAL2);
@@ -160,9 +162,9 @@ class TrainingSessionImp implements TrainingSession {
         //$L2G -p $REMOTE -o $OUT/remote.png --watch &
         Path outDir = getOutDir();
         Files.createDirectories(outDir);
-        runGitwL2G(REMOTE, outDir.resolve(REMOTE + ".png").toString(), true, false);
-        runGitwL2G(LOCAL1, outDir.resolve(LOCAL1 + ".png").toString(), true, false);
-        runGitwL2G(LOCAL2, outDir.resolve(LOCAL2 + ".png").toString(), true, false);
+        runGitwL2G(REMOTE, getImagePath(REMOTE).toString(), true, false);
+        runGitwL2G(LOCAL1, getImagePath(LOCAL1).toString(), true, false);
+        runGitwL2G(LOCAL2, getImagePath(LOCAL2).toString(), true, false);
 
     }
 
@@ -240,11 +242,33 @@ class TrainingSessionImp implements TrainingSession {
     }
 
     private Path getImagePath(String repoID) {
-        return baseDir.resolve("out").resolve(repoID + ".png");
+        return getOutDir().resolve(repoID + ".png");
     }
 
+    private void killInPath(Path path)
+        throws InterruptedException, ExecutionException, IOException {
+
+        final String TOOLBOX_RUNNER =
+            "sh //il-nas-01//PD-Application/Application/bin/bundle_root/runners/script_runner.sh - tools/toolbox/toolbox_runner.sh -";
+
+        List<String> command = Arrays.asList(TOOLBOX_RUNNER, "kill.in.path", "-p", path.toAbsolutePath().toString(),"--force");
+        runCommand(Paths.get("."), String.join(" ",command ), true);
+
+    }
+
+    private void removeSessionDir() throws InterruptedException, ExecutionException, IOException {
+        if (baseDir.toFile().exists()) {
+            //kill all other locking processes
+            killInPath(baseDir);
+            //delete the session folder
+            FileSystemUtils.deleteRecursively(baseDir);
+        }
+    }
+
+
+
     @Override
-    public void shutdown() throws IOException {
+    public void shutdown() throws IOException, ExecutionException, InterruptedException {
         //kill bg processes
         for (ListIterator<Process> iterator = bgProcesses.listIterator(); iterator.hasNext();) {
             Process bgProc = iterator.next();
@@ -252,11 +276,7 @@ class TrainingSessionImp implements TrainingSession {
             iterator.remove();
         }
 
-        //delete the session folder
-        if (baseDir.toFile().exists()) {
-            FileSystemUtils.deleteRecursively(baseDir);
-        }
-
+        removeSessionDir();
     }
 
 

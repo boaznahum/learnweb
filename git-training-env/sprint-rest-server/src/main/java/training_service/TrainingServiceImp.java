@@ -55,4 +55,15 @@ class TrainingServiceImp implements TrainingService {
         return session;
 
     }
+
+    @Override
+    public void closeSession(String sessionID) throws InterruptedException, ExecutionException, IOException {
+        TrainingSession trainingSession = sessions.get(sessionID);
+        if (trainingSession != null) {
+            trainingSession.shutdown();
+        }
+
+        sessions.remove(sessionID);
+
+    }
 }
