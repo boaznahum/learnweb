@@ -1,7 +1,9 @@
 package training_service;
 
+import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ExecutionException;
 
 /**
  * @author Boaz Nahum
@@ -11,15 +13,15 @@ class TrainingServiceImp implements TrainingService {
 
     private static TrainingServiceImp INSTANCE;
 
-     final Map<String, TrainingSession> sessions = new ConcurrentHashMap<>();
+    private final Map<String, TrainingSession> sessions = new ConcurrentHashMap<>();
 
     static TrainingService instance() {
 
 
-        if (INSTANCE ==null) {
+        if (INSTANCE == null) {
             synchronized (TrainingServiceImp.class) {
-                if (INSTANCE ==null) {
-                    INSTANCE= new TrainingServiceImp();
+                if (INSTANCE == null) {
+                    INSTANCE = new TrainingServiceImp();
                 }
             }
         }
@@ -31,6 +33,24 @@ class TrainingServiceImp implements TrainingService {
     @Override
     public TrainingSession getSession(String sessionID) {
 
-        return sessions.computeIfAbsent(sessionID, TrainingSessionImp::new);
+        //Function<String, TrainingSession> createNewSession = TrainingSessionImp::new;
+
+        return sessions.computeIfAbsent(sessionID, this::createNewSession);
+    }
+
+    private TrainingSession createNewSession(String sessionID) {
+
+        TrainingSessionImp session = new TrainingSessionImp(sessionID);
+
+        try {
+            session.init();
+        } catch (InterruptedException | ExecutionException | IOException e) {
+            throw new RuntimeException(e);
+
+        }
+
+
+        return session;
+
     }
 }

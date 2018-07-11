@@ -14,7 +14,7 @@ class App extends React.Component {
 
                 <Repositories.RepositoriesManager />
 
-                <div className="Remote">
+                <div className="Remote" >
 
                     { Repositories.createRepoElement({ repoID:RepoID.REMOTE, name:"Remote"})}
                 </div>
