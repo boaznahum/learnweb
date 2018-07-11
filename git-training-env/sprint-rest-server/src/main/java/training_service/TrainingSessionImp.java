@@ -5,10 +5,14 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 /**
  * @author Boaz Nahum
@@ -20,7 +24,13 @@ class TrainingSessionImp implements TrainingSession {
 
     TrainingSessionImp(String sessionID) {
 
-        baseDir = Paths.get("F:\\views\\g\\git_training_env\\sessions\\" + sessionID);
+        String amat_sw_root_volume = System.getenv("AMAT_SW_ROOT_VOLUME");
+        if (amat_sw_root_volume == null) {
+            amat_sw_root_volume = "F:\\";
+        } else {
+            amat_sw_root_volume = amat_sw_root_volume.replace("/","\\");
+        }
+        baseDir = Paths.get(amat_sw_root_volume +"views\\g\\git_training_env\\sessions\\" + sessionID);
 
     }
 
@@ -58,26 +68,50 @@ class TrainingSessionImp implements TrainingSession {
     }
 
 
+    private String runCommandOnRepo(String repoId, List<String> command, boolean waitFor)
+        throws InterruptedException, ExecutionException, IOException {
+        String cmd = String.join(" ", command);
+        return runCommandOnRepo(repoId, cmd, waitFor);
+
+    }
+
+
     @Override
-    public String runCommand(String repoID, String command) throws IOException, ExecutionException,
+    public String runCommandOnRepo(String repoID, String command, boolean waitFor)
+        throws IOException, ExecutionException, InterruptedException {
+        Path repoDir = getRepoDir(repoID);
+        return runCommand(repoDir, command, waitFor);
+
+    }
+
+    private String runCommand(Path workingDirectory, String command, boolean waitFor) throws IOException, ExecutionException,
         InterruptedException {
 
-        Path repoDir = getRepoDir(repoID);
-
+        Logger logger = Logger.getGlobal();
+        logger.info("running command " + command + " in " + workingDirectory.toAbsolutePath().toString());
         ProcessBuilder pb = new ProcessBuilder();
 
         pb.command(command.split("\\s+"));
 
-        pb.directory(repoDir.toFile());
+        pb.directory(workingDirectory.toFile());
 
         Process process = pb.start();
 
-        CompletableFuture<String> stdOutTask = getOutTask(process.getInputStream());
-        CompletableFuture<String> stdErrTask = getOutTask(process.getErrorStream());
+        String stdOut;
+        String stdErr;
+        CompletableFuture<String> stdOutTask = getOutTask(process.getInputStream(), waitFor);
+        CompletableFuture<String> stdErrTask = getOutTask(process.getErrorStream(), waitFor);
 
+        if (waitFor) {
+            stdOut = stdOutTask.get();
+            stdErr = stdErrTask.get();
+        } else {
+            stdOut="not available since not waiting";
+            stdErr="not available since not waiting";
+        }
 
-        String stdOut = stdOutTask.get();
-        String stdErr = stdErrTask.get();
+        logger.info("\nSTDOUT:\n"+stdOut +"STDERR:\n"+stdErr);
+
 
         return stdOut + "\n" + stdErr;
 
@@ -85,16 +119,23 @@ class TrainingSessionImp implements TrainingSession {
     }
 
 
-    private CompletableFuture<String> getOutTask(InputStream inputStream) {
+    private CompletableFuture<String> getOutTask(InputStream inputStream, boolean appendOutput) {
         return CompletableFuture.supplyAsync(() -> {
 
                 StringBuilder outI = new StringBuilder();
 
                 Scanner scanner = new Scanner(inputStream);
 
-                while (scanner.hasNextLine()) {
-                    outI.append(scanner.nextLine()).append("\n");
+                if (appendOutput) {
+                    while (scanner.hasNextLine()) {
+                        outI.append(scanner.nextLine()).append("\n");
+                    }
+                }else {
+                    while (scanner.hasNextLine()) {
+                        scanner.nextLine();
+                    }
                 }
+
 
                 return outI.toString();
             });
@@ -105,11 +146,18 @@ class TrainingSessionImp implements TrainingSession {
         // create 3 repositories
         // put watch on each
 
-        createRepo(LOCAL1, false);
-        createRepo(LOCAL2, false);
         createRepo(REMOTE, true);
+        cloneLocalRepo(REMOTE, LOCAL1);
+        cloneLocalRepo(REMOTE, LOCAL2);
 
-
+        //$L2G --verbose -p $LOCAL1 -o $OUT/local1.png --watch &
+        //$L2G -p $LOCAL2 -o $OUT/local2.png --watch &
+        //$L2G -p $REMOTE -o $OUT/remote.png --watch &
+        Path outDir = getOutDir();
+        Files.createDirectories(outDir);
+        runGitwL2G(REMOTE, outDir.resolve(REMOTE + ".png").toString(), true, false);
+        runGitwL2G(LOCAL1, outDir.resolve(LOCAL1 + ".png").toString(), true, false);
+        runGitwL2G(LOCAL2, outDir.resolve(LOCAL2 + ".png").toString(), true, false);
 
     }
 
@@ -120,20 +168,70 @@ class TrainingSessionImp implements TrainingSession {
 
         Files.createDirectories(repoDir);
 
-        String command = "git init";
+        List<String> command = new ArrayList<>(Arrays.asList("git", "init"));
 
         if (isBare) {
-            command += " --bare";
+            command.add("--bare");
         }
 
-        runCommand(repoID, command);
+        runCommandOnRepo(repoID, command, true);
 
 
+    }
+
+    private void cloneLocalRepo(String fromRepoID, String toRepoID)
+        throws InterruptedException, ExecutionException, IOException {
+        List<String> command = new ArrayList<>(Arrays.asList("git", "clone"));
+
+        Path from = getRepoDir(fromRepoID);
+        Path to = getRepoDir(toRepoID);
+
+        command.add(from.toAbsolutePath().toString());
+        command.add(to.toAbsolutePath().toString());
+
+        runCommand(Paths.get("."), String.join(" ",command),true );
+
+    }
+
+    //$L2G --verbose -p $LOCAL1 -o $OUT/local1.png --watch &
+    private void runGitwL2G(String repoID, String outFile, boolean shouldWatch, boolean shouldVerbose)
+        throws InterruptedException, ExecutionException, IOException {
+
+        final String GITW_RUNNER =
+            "sh //il-nas-01//PD-Application/Application/bin/bundle_root/runners/script_runner.sh - tools/git/gitw/gitw_runner.sh -";
+
+        List<String> command = new ArrayList<>(Arrays.asList(GITW_RUNNER, "l2g"));
+
+        /*if (repoPath != null) {
+            command.add("-p");
+            command.add(repoPath);
+        }*/
+
+        if (outFile != null) {
+            command.add("-o");
+            command.add(outFile);
+        }
+
+        if (shouldWatch) {
+            command.add("--watch");
+        }
+
+        if (shouldVerbose) {
+            command.add("--verbose");
+        }
+
+        //command.add("&");
+
+        runCommandOnRepo(repoID, command, false);
     }
 
 
     private Path getRepoDir(String repoID) {
         return baseDir.resolve(repoID);
+    }
+
+    private Path getOutDir() {
+        return baseDir.resolve("out");
     }
 
     private Path getImagePath(String repoID) {

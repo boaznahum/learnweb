@@ -68,7 +68,7 @@ public class ServerController {
         TrainingSession sess = ts.getSession(sessionID);
 
 
-        String response = sess.runCommand(repoID, command);
+        String response = sess.runCommandOnRepo(repoID, command, true);
 
         return response;
 
