@@ -16,9 +16,11 @@ import java.util.concurrent.TimeUnit;
 
 class TrainingSessionImp implements TrainingSession {
 
-    private Path baseDir = Paths.get("F:\\views\\g\\two_locals_one_remote");
+    private final Path baseDir;
 
-    public TrainingSessionImp(String sessionID) {
+    TrainingSessionImp(String sessionID) {
+
+        baseDir = Paths.get("F:\\views\\g\\git_training_env\\sessions\\" + sessionID);
 
     }
 
@@ -55,15 +57,12 @@ class TrainingSessionImp implements TrainingSession {
 
     }
 
-    private Path getImagePath(String repoID) {
-        return baseDir.resolve("out").resolve(repoID + ".png");
-    }
 
     @Override
     public String runCommand(String repoID, String command) throws IOException, ExecutionException,
         InterruptedException {
 
-        Path repoDir = baseDir.resolve(repoID);
+        Path repoDir = getRepoDir(repoID);
 
         ProcessBuilder pb = new ProcessBuilder();
 
@@ -85,6 +84,7 @@ class TrainingSessionImp implements TrainingSession {
 
     }
 
+
     private CompletableFuture<String> getOutTask(InputStream inputStream) {
         return CompletableFuture.supplyAsync(() -> {
 
@@ -93,10 +93,52 @@ class TrainingSessionImp implements TrainingSession {
                 Scanner scanner = new Scanner(inputStream);
 
                 while (scanner.hasNextLine()) {
-                    outI.append(scanner.nextLine() + "\n");
+                    outI.append(scanner.nextLine()).append("\n");
                 }
 
                 return outI.toString();
             });
     }
+
+    void init() throws InterruptedException, ExecutionException, IOException {
+
+        // create 3 repositories
+        // put watch on each
+
+        createRepo(LOCAL1, false);
+        createRepo(LOCAL2, false);
+        createRepo(REMOTE, true);
+
+
+
+    }
+
+    private void createRepo(String repoID, boolean isBare) throws IOException, ExecutionException,
+        InterruptedException {
+
+        Path repoDir = getRepoDir(repoID);
+
+        Files.createDirectories(repoDir);
+
+        String command = "git init";
+
+        if (isBare) {
+            command += " --bare";
+        }
+
+        runCommand(repoID, command);
+
+
+    }
+
+
+    private Path getRepoDir(String repoID) {
+        return baseDir.resolve(repoID);
+    }
+
+    private Path getImagePath(String repoID) {
+        return baseDir.resolve("out").resolve(repoID + ".png");
+    }
+
+
 }

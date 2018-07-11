@@ -9,8 +9,18 @@ import java.util.concurrent.ExecutionException;
 
 public interface TrainingSession {
 
+    String LOCAL1 = "local1";
+    String LOCAL2 = "local2";
+    String REMOTE = "remote";
+
     long getImageID(String repoID) throws IOException;
 
+    /**
+     *
+     * @param repoID   {@link #LOCAL1}, {@link #LOCAL2} or {@link #REMOTE}
+     * @return
+     * @throws IOException
+     */
     byte[] getImage(String repoID) throws IOException;
 
     String runCommand(String repoID, String command) throws IOException, ExecutionException, InterruptedException;
