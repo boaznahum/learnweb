@@ -53,6 +53,8 @@ export const  reducer = combineReducers<RootState>(
         // what does this name mean ? - this is the name in the super state !!!
         someDummy:dummy,
         repo:Repo.repositoriesReducer,
+
+
         currentRepo:currentRepoReducer
     }
 );
