@@ -21,7 +21,7 @@ public class ServerController {
     @CrossOrigin
     @RequestMapping("/imageID")
     public long imageID(@RequestParam(value = "sessionID") String sessionID,
-                                        @RequestParam(value = "repoID") String repoID) throws IOException {
+                        @RequestParam(value = "repoID") String repoID) throws IOException {
 
 
         TrainingService ts = TrainingService.instance();
@@ -34,6 +34,18 @@ public class ServerController {
         return id;
 
 
+    }
+
+    @CrossOrigin
+    @RequestMapping("/closeSession")
+    public void closeSession(@RequestParam(value = "sessionID") String sessionID) throws IOException {
+
+
+        TrainingService ts = TrainingService.instance();
+
+        TrainingSession sess = ts.getSession(sessionID);
+
+        sess.shutdown();
     }
 
     //https://stackoverflow.com/questions/40557637/how-to-return-an-image-in-spring-boot-controller-and-serve-like-a-file-system/40585852

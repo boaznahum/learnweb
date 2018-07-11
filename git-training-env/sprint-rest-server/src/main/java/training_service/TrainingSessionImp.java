@@ -1,5 +1,7 @@
 package training_service;
 
+import org.springframework.util.FileSystemUtils;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
@@ -8,6 +10,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.ListIterator;
 import java.util.Scanner;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -21,6 +24,7 @@ import java.util.logging.Logger;
 class TrainingSessionImp implements TrainingSession {
 
     private final Path baseDir;
+    private final List<Process> bgProcesses = new ArrayList<>(3);
 
     TrainingSessionImp(String sessionID) {
 
@@ -88,7 +92,7 @@ class TrainingSessionImp implements TrainingSession {
         InterruptedException {
 
         Logger logger = Logger.getGlobal();
-        logger.info("running command " + command + " in " + workingDirectory.toAbsolutePath().toString());
+        logger.info("running command '" + command + "' in '" + workingDirectory.toAbsolutePath().toString() + "'");
         ProcessBuilder pb = new ProcessBuilder();
 
         pb.command(command.split("\\s+"));
@@ -106,8 +110,9 @@ class TrainingSessionImp implements TrainingSession {
             stdOut = stdOutTask.get();
             stdErr = stdErrTask.get();
         } else {
-            stdOut="not available since not waiting";
-            stdErr="not available since not waiting";
+            stdOut="not available since not waiting\n";
+            stdErr="not available since not waiting\n";
+            bgProcesses.add(process);
         }
 
         logger.info("\nSTDOUT:\n"+stdOut +"STDERR:\n"+stdErr);
@@ -236,6 +241,22 @@ class TrainingSessionImp implements TrainingSession {
 
     private Path getImagePath(String repoID) {
         return baseDir.resolve("out").resolve(repoID + ".png");
+    }
+
+    @Override
+    public void shutdown() throws IOException {
+        //kill bg processes
+        for (ListIterator<Process> iterator = bgProcesses.listIterator(); iterator.hasNext();) {
+            Process bgProc = iterator.next();
+            bgProc.destroy();
+            iterator.remove();
+        }
+
+        //delete the session folder
+        if (baseDir.toFile().exists()) {
+            FileSystemUtils.deleteRecursively(baseDir);
+        }
+
     }
 
 

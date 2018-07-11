@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutionException;
+import java.util.logging.Logger;
 
 /**
  * @author Boaz Nahum
@@ -40,6 +41,7 @@ class TrainingServiceImp implements TrainingService {
 
     private TrainingSession createNewSession(String sessionID) {
 
+        Logger.getGlobal().info("creating session " + sessionID);
         TrainingSessionImp session = new TrainingSessionImp(sessionID);
 
         try {
