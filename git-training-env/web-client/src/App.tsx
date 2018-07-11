@@ -1,12 +1,32 @@
 import * as React from 'react';
+import {connect} from "react-redux";
 import './App.css';
+import {IAppState} from "./AppState";
 // @ts-ignore
 import GitTerminal from "./GitTerminal";
 import {RepoID} from "./repository/Actions";
 import Repositories from './repository/Repositories'
+import {RootState} from "./root/reducer";
 
-class App extends React.Component {
+
+interface IAppProps {}
+
+type Sig = IAppProps & IAppState & {};
+
+
+class App extends React.Component<Sig> {
     public render() {
+
+        let name1:string = "Local 1";
+        let name2:string = "Local 2";
+
+        if (this.props.currentRepo === RepoID.LOCAL1) {
+            name1 += "*";
+        } else if (this.props.currentRepo === RepoID.LOCAL2) {
+            name2 += "*";
+        }
+
+
         return (
 
 
@@ -24,10 +44,10 @@ class App extends React.Component {
                 </div>
 
                 <div className="Local">
-                    { Repositories.createRepoElement({ repoID:RepoID.LOCAL1, name:"Local 1"})}
+                    { Repositories.createRepoElement({ repoID:RepoID.LOCAL1, name:name1})}
                 </div>
                 <div className="Local">
-                    { Repositories.createRepoElement({ repoID:RepoID.LOCAL2, name:"Local 2"})}
+                    { Repositories.createRepoElement({ repoID:RepoID.LOCAL2, name:name2})}
                 </div>
 
 
@@ -37,4 +57,16 @@ class App extends React.Component {
     }
 }
 
-export default App;
+const mapStateToProps = (state: RootState, ownProps: IAppProps): IAppState => {
+
+    return state.app;
+
+};
+
+export default connect(
+    mapStateToProps,
+    // mapDispatchToProps
+)(App);
+
+
+

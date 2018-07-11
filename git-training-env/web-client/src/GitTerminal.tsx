@@ -196,7 +196,7 @@ function mapDispatchToProps(dispatch: Dispatch): IGitTerminalActions {
 }
 const mapStateToProps = (state: RootState, ownProps: IGTerminalProps): IGTerminalState => {
 
-    return {currentRepo: state.currentRepo};
+    return {currentRepo: state.app.currentRepo};
 
 };
 
