@@ -264,23 +264,36 @@ class GitTerminalUnconnected extends Component<Sig> {
             // this.playNextLine();
             // this.finishHandler();
         } else if (nextCommand.toLowerCase().startsWith("@")) {
+            const seqnum = nextCommand.substr(1);
+            let lines;
+            if (seqnum === "1") {
+                lines = [
+                    ":restart",
+                    ":1",
+                    "git ec c1",
+                    "git push",
+                    ":2",
+                    "git pull",
+                    "git ec c2",
+                    "git push",
+                    ":1",
+                    "git ec c3",
+                    "git push",
+                    "git pull",
+                    "git push"
 
-            const lines = [
-                ":restart",
-                ":1",
-                "git ec c1",
-                "git push",
-                ":2",
-                "git pull",
-                "git ec c2",
-                "git push",
-                ":1",
-                "git ec c3",
-                "git push",
-                "git pull",
-                "git push"
+                ];
+            } else if (seqnum === "2") {
+                lines = [
+                    ":restart",
+                    "git ec c1",
+                    "git br new_br",
+                    "git ec c2"
 
-            ];
+                ];
+            } else {
+                lines = [":restart"];
+            }
 
             this.startPlay(lines);
             this.finishHandler(false);
