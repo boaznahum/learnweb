@@ -40,7 +40,7 @@ const RepositoriesManager = class  extends Component<Sig> {
 
         setInterval(() => {
             this.fetchImagesID();
-        }, 30000);
+        }, 3000);
 
     }
 

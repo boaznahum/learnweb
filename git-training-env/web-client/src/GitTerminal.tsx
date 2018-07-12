@@ -92,7 +92,7 @@ class GitTerminalUnconnected extends Component<Sig> {
         if (inHandler) {
             doIt();
         } else {
-            setTimeout(doIt, 1)
+            setTimeout(doIt, 10)
         }
 
     }
@@ -281,7 +281,7 @@ class GitTerminalUnconnected extends Component<Sig> {
 
     // @ts-ignore
     private restartSession() {
-        this.runRest(RESTART_URL + "?sessionID=1");
+        this.runRest(RESTART_URL+"?sessionID=1", true);
     }
 
     // @ts-ignore
@@ -312,7 +312,7 @@ class GitTerminalUnconnected extends Component<Sig> {
 
         const runCommandURL = RUN_COMMAND_URL + "?sessionID=1&repoID=" + repoID + "&command=" + encodeURIComponent(command);
 
-        this.runRest(runCommandURL);
+        this.runRest(runCommandURL, true);
     }
 
     private runRest(url: string) {
@@ -353,7 +353,12 @@ class GitTerminalUnconnected extends Component<Sig> {
 
                 this.playNextLine();
                 this.finishHandler();
-            });
+            }).then (res => {
+                if (callFinish) {
+                    this.finishHandler();
+                }
+            }
+        );
 
 
     }
