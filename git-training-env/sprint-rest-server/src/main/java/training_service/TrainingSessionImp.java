@@ -267,6 +267,8 @@ class TrainingSessionImp implements TrainingSession {
         if (baseDir.toFile().exists()) {
             //kill all other locking processes
             killInPath(baseDir);
+            //add permissions to avoid java.nio.file.AccessDeniedException
+            runCommand(baseDir, "chmod -R +w .", true);
             //delete the session folder
             FileSystemUtils.deleteRecursively(baseDir);
         }
