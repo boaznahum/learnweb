@@ -119,6 +119,7 @@ class GitTerminalUnconnected extends Component<Sig> {
         const log = this.child.console;
 
         if (log) {
+            log.log("Sequence started:");
             log.log("Will play next command: '" + lines[0] + "'");
         }
 
@@ -165,7 +166,7 @@ class GitTerminalUnconnected extends Component<Sig> {
             action = a;
 
             if (log) {
-                log.log("Playing finished!\n"+
+                log.log("Sequence Finished!\n"+
                 "______ _____ _   _  ___________  _____ \n" +
                     "|  _  \\  ___| | | ||  _  | ___ \\/  ___|\n" +
                     "| | | | |__ | | | || | | | |_/ /\\ `--. \n" +
@@ -215,13 +216,13 @@ class GitTerminalUnconnected extends Component<Sig> {
         // @ts-ignore
         // this.child.console.log("nextCommand=" +nextCommand);
 
-
+        const log = this.child.console;
         if (nextCommand === "") {
 
             if (this.props.isPlaying) {
                 nextCommand = this.props.playLines[this.props.currentLine];
 
-                const log = this.child.console;
+
 
                 if (log) {
                     log.log("Playing next command: '" + nextCommand + "'");
@@ -266,14 +267,14 @@ class GitTerminalUnconnected extends Component<Sig> {
             const lines = [
                 ":restart",
                 ":1",
-                "git ec commit1",
+                "git ec c1",
                 "git push",
                 ":2",
                 "git pull",
-                "git ec commit2",
+                "git ec c2",
                 "git push",
                 ":1",
-                "git ec commit3",
+                "git ec c3",
                 "git push",
                 "git pull",
                 "git push"
@@ -282,6 +283,7 @@ class GitTerminalUnconnected extends Component<Sig> {
 
             this.startPlay(lines);
             this.finishHandler(false);
+
         } else {
             this.runCommand(nextCommand);
             // this.finishHandler();
