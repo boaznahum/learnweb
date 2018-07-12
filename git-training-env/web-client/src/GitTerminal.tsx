@@ -315,7 +315,7 @@ class GitTerminalUnconnected extends Component<Sig> {
         this.runRest(runCommandURL, true);
     }
 
-    private runRest(url: string) {
+    private runRest(url: string, callFinish:boolean) {
 
         // https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api
         // @ts-ignore
