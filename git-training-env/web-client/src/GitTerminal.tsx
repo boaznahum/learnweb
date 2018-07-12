@@ -73,14 +73,23 @@ class GitTerminalUnconnected extends Component<Sig>{
 
     private changeInHandler(inHandler:boolean) {
 
-        const action:ChangeInHandlerAction = {
+        const doIt = () => {
 
-            type:ActionTypes.SET_IN_HANDLER_STATE,
-            payload: {inHandler}
+            const action: ChangeInHandlerAction = {
 
+                type: ActionTypes.SET_IN_HANDLER_STATE,
+                payload: {inHandler}
+
+            };
+
+            this.props.dispatch(action)
         }
 
-        this.props.dispatch(action)
+        if (inHandler) {
+            doIt();
+        } else {
+            setTimeout(doIt, 1)
+        }
 
     }
 
