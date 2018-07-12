@@ -117,7 +117,7 @@ class GitTerminalUnconnected extends Component<Sig> {
         const log = this.child.console;
 
         if (log) {
-            log.log("Will play next command:" + lines[0]);
+            log.log("Will play next command: '" + lines[0] + "'");
         }
 
         const action: TerminalPlayStartAction = {
@@ -166,7 +166,7 @@ class GitTerminalUnconnected extends Component<Sig> {
             const log = this.child.console;
 
             if (log) {
-                log.log("Will play next command:" + this.props.playLines[currentLine]);
+                log.log("Will play next command: '" + this.props.playLines[currentLine] + "'");
             }
 
             const a: TerminalPlayNextLineAction = {
@@ -206,7 +206,7 @@ class GitTerminalUnconnected extends Component<Sig> {
                 const log = this.child.console;
 
                 if (log) {
-                    log.log("Playing next command:" + nextCommand);
+                    log.log("Playing next command: '" + nextCommand + "'");
                 }
 
             }
@@ -242,7 +242,7 @@ class GitTerminalUnconnected extends Component<Sig> {
             this.restartSession();
             this.props.setCurrentRepo(RepoID.LOCAL1);
             this.playNextLine();
-            this.finishHandler();
+            // this.finishHandler();
         } else if (nextCommand.toLowerCase().startsWith("@")) {
 
             const lines = [
@@ -257,7 +257,7 @@ class GitTerminalUnconnected extends Component<Sig> {
             this.finishHandler();
         } else {
             this.runCommand(nextCommand);
-            this.finishHandler();
+            // this.finishHandler();
         }
 
 

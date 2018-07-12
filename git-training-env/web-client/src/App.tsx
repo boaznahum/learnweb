@@ -48,6 +48,9 @@ class App extends React.Component<Sig> {
 
                 <div className="Terminal">
                     <GitTerminal sessionID={"1"}/>
+                    {// <input type="file" id="fileinput" />
+                    }
+
                 </div>
 
                 <div className={this.props.currentRepo === RepoID.LOCAL1 ? "Local Current" : "Local"}>
@@ -62,6 +65,28 @@ class App extends React.Component<Sig> {
 
         );
     }
+    // function readSingleFile(evt) {
+    //     //Retrieve the first (and only!) File from the FileList object
+    //     var f = evt.target.files[0];
+    //
+    //     if (f) {
+    //         var r = new FileReader();
+    //         r.onload = function(e) {
+    //             var contents = e.target.result;
+    //             alert( "Got the file.n"
+    //                 +"name: " + f.name + "n"
+    //                 +"type: " + f.type + "n"
+    //                 +"size: " + f.size + " bytesn"
+    //                 + "starts with: " + contents.substr(1, contents.indexOf("n"))
+    //             );
+    //         }
+    //         r.readAsText(f);
+    //     } else {
+    //         alert("Failed to load file");
+    //     }
+    // }
+    //
+    // document.getElementById('fileinput').addEventListener('change', readSingleFile, false);
 }
 
 const mapStateToProps = (state: RootState, ownProps: IAppProps): IAppState => {
