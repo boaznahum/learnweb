@@ -6,7 +6,13 @@ import {connect, Dispatch} from "react-redux";
 import Console from 'react-console-component'
 
 import 'react-console-component/main.css';
-import {ChangeInHandlerAction, IGTerminalState} from "./GitTerminalState";
+import {AnyAction} from "redux";
+import {
+    ChangeInHandlerAction,
+    IGTerminalState,
+    TerminalPlayDoneAction, TerminalPlayNextLineAction,
+    TerminalPlayStartAction
+} from "./GitTerminalState";
 import {ActionTypes, RepoID, setCurrentRepo} from "./repository/Actions";
 import {RootState} from "./root/reducer";
 
@@ -17,8 +23,6 @@ const RUN_COMMAND_URL = SERVER_URL + "runCommand";
 const RESTART_URL = SERVER_URL + "restartSession";
 
 
-
-
 interface IGTerminalProps {
     // 1 - local 1, 2 - local 2, 3 - remote
     sessionID: string;
@@ -27,7 +31,7 @@ interface IGTerminalProps {
 interface IGitTerminalActions {
 
     // for general use, should be removed
-    dispatch:Dispatch;
+    dispatch: Dispatch;
 
     setCurrentRepo(repoID: RepoID): void
 
@@ -36,7 +40,7 @@ interface IGitTerminalActions {
 type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
 
 
-class GitTerminalUnconnected extends Component<Sig>{
+class GitTerminalUnconnected extends Component<Sig> {
 
 
     private child: {
@@ -63,7 +67,7 @@ class GitTerminalUnconnected extends Component<Sig>{
 
     public componentWillReceiveProps(nextProps: Readonly<Sig>, nextContext: any): void {
 
-        if ( this.props.inHandler && ! nextProps.inHandler) {
+        if (this.props.inHandler && !nextProps.inHandler) {
             // @ts-ignore
             this.child.console.return()
         }
@@ -71,7 +75,7 @@ class GitTerminalUnconnected extends Component<Sig>{
     }
 
 
-    private changeInHandler(inHandler:boolean) {
+    private changeInHandler(inHandler: boolean) {
 
         const doIt = () => {
 
@@ -83,7 +87,7 @@ class GitTerminalUnconnected extends Component<Sig>{
             };
 
             this.props.dispatch(action)
-        }
+        };
 
         if (inHandler) {
             doIt();
@@ -108,75 +112,154 @@ class GitTerminalUnconnected extends Component<Sig>{
 
     }
 
+    private startPlay(lines: string[]) {
+
+        const log = this.child.console;
+
+        if (log) {
+            log.log("Play next command:" + lines[0]);
+        }
+
+        const action: TerminalPlayStartAction = {
+
+            type: ActionTypes.TERMINAL_PLAY_START,
+            payload: {
+                playLines: lines
+            }
+
+        };
+
+        this.props.dispatch(action);
+    }
+
+    private playNextLine() {
+
+        if (!this.props.isPlaying) {
+            return
+        }
+
+        let currentLine = this.props.currentLine;
+        ++currentLine;
+
+        // compute if last or not
+        let done: boolean = false;
+
+        if (currentLine >= this.props.playLines.length) {
+            done = true;
+        }
+
+        let action: AnyAction;
+
+        if (done) {
+
+
+            const a: TerminalPlayDoneAction = {
+
+                type: ActionTypes.TERMINAL_PLAY_DONE,
+
+            };
+
+            action = a;
+
+        } else {
+
+            const log = this.child.console;
+
+            if (log) {
+                log.log("Play next command:" + this.props.playLines[currentLine]);
+            }
+
+            const a: TerminalPlayNextLineAction = {
+
+                type: ActionTypes.TERMINAL_PLAY_NEXT_LINE,
+                payload: {
+                    currentLine: this.props.currentLine + 1
+                }
+
+            };
+
+            action = a;
+        }
+
+
+        this.props.dispatch(action);
+    }
+
+
     private handler = (text: string) => {
 
         this.changeInHandler(true);
 
-        let command = text;
-
-        while (command) {
-            let nextCommand = command;
-            const indexOf = command.indexOf("\n");
-
-            if (indexOf !== -1) {
-                nextCommand = command.substr(0,indexOf);
-                command = command.substr(indexOf+1);
-            } else {
-                command = "";
-            }
-            
-             const log = this.child.console;
-
-            if(log) {
-                log.log("command=" +command);
-                log.log("nextCommand=" +nextCommand);
-            }
-
-            // @ts-ignore
-            // this.child.console.log("nextCommand=" +nextCommand);
+        let nextCommand = text;
 
 
-            if (nextCommand === "") {
-                this.finishHandler();
-                // return;
-            } else if (nextCommand === ":1") {
-                this.props.setCurrentRepo(RepoID.LOCAL1);
-                this.finishHandler();
-                // return;
-            } else if (nextCommand === ":2") {
-                this.props.setCurrentRepo(RepoID.LOCAL2);
-                this.finishHandler();
-                // return;
-            } else if (nextCommand.toLowerCase() === ":r") {
 
-                this.props.setCurrentRepo(RepoID.REMOTE);
-                this.finishHandler();
-                // return;
-                // } else if (text.toLowerCase() === ":pause") {
-                //     this.props.setCurrentRepo(RepoID.REMOTE);
-                //
-                //     this.setStateAfterCommand({currentRepo: RepoID.REMOTE});
-                //     return;
-            } else if (nextCommand === ":restart") {
-                this.restartSession();
-                this.props.setCurrentRepo(RepoID.LOCAL1);
-                this.finishHandler();
-            }else if (nextCommand.toLowerCase().startsWith("@")) {
+        // @ts-ignore
+        // this.child.console.log("nextCommand=" +nextCommand);
 
-                // const file = nextCommand.substr(1);
-                // alert(file)
-                // this.readTextFile("F:\\views\\g\\git_training_env\\1.txt");
-                // console.info(file)
-                command = ":1\ngit ec aaa\ngit push\n:2\ngit pull";
 
-                // this.props.setCurrentRepo(RepoID.REMOTE);
-                // this.setStateAfterCommand({});
-                // return;
-            } else {
-                this.runCommand(nextCommand);
-                this.finishHandler();
+        if (nextCommand === "") {
+
+            if (this.props.isPlaying) {
+                nextCommand = this.props.playLines[this.props.currentLine];
+
+                const log = this.child.console;
+
+                if (log) {
+                    log.log("Playing next command:" + nextCommand);
+                }
+
             }
         }
+
+        if (nextCommand === "") {
+
+
+            this.finishHandler();
+            // return;
+        } else if (nextCommand === ":1") {
+            this.props.setCurrentRepo(RepoID.LOCAL1);
+            this.playNextLine();
+            this.finishHandler();
+            // return;
+        } else if (nextCommand === ":2") {
+            this.props.setCurrentRepo(RepoID.LOCAL2);
+            this.playNextLine();
+            this.finishHandler();
+            // return;
+        } else if (nextCommand.toLowerCase() === ":r") {
+
+            this.props.setCurrentRepo(RepoID.REMOTE);
+            this.playNextLine();
+            this.finishHandler();
+            // return;
+            // } else if (text.toLowerCase() === ":pause") {
+            //     this.props.setCurrentRepo(RepoID.REMOTE);
+            //
+            //     this.setStateAfterCommand({currentRepo: RepoID.REMOTE});
+            //     return;
+        } else if (nextCommand === ":restart") {
+            this.restartSession();
+            this.props.setCurrentRepo(RepoID.LOCAL1);
+            this.playNextLine();
+            this.finishHandler();
+        } else if (nextCommand.toLowerCase().startsWith("@")) {
+
+            const lines = [
+                ":1",
+                "git ec aaa",
+                "git push",
+                ":2",
+                "git pull"
+            ];
+
+            this.startPlay(lines);
+            this.finishHandler();
+        } else {
+            this.runCommand(nextCommand);
+            this.finishHandler();
+        }
+
 
     };
 
@@ -198,7 +281,7 @@ class GitTerminalUnconnected extends Component<Sig>{
 
     // @ts-ignore
     private restartSession() {
-        this.runRest(RESTART_URL+"?sessionID=1");
+        this.runRest(RESTART_URL + "?sessionID=1");
     }
 
     // @ts-ignore
@@ -232,7 +315,7 @@ class GitTerminalUnconnected extends Component<Sig>{
         this.runRest(runCommandURL);
     }
 
-    private runRest(url:string) {
+    private runRest(url: string) {
 
         // https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api
         // @ts-ignore
@@ -268,10 +351,8 @@ class GitTerminalUnconnected extends Component<Sig>{
                     this.child.console.log(m);
                 }
 
-                this.setState({},
-                    // @ts-ignore
-                    this.child.console.return
-                );
+                this.playNextLine();
+                this.finishHandler();
             });
 
 
@@ -299,6 +380,7 @@ class GitTerminalUnconnected extends Component<Sig>{
     //     rawFile.send(null);
     // }
 }
+
 function mapDispatchToProps(dispatch: Dispatch): IGitTerminalActions {
     return {
 
@@ -309,16 +391,20 @@ function mapDispatchToProps(dispatch: Dispatch): IGitTerminalActions {
 
     };
 }
+
 const mapStateToProps = (state: RootState, ownProps: IGTerminalProps): IGTerminalState => {
 
     return {
         currentRepo: state.app.currentRepo,
-        inHandler:state.terminalState.inHandler
+        inHandler: state.terminalState.inHandler,
+        isPlaying:state.terminalState.isPlaying,
+        currentLine:state.terminalState.currentLine,
+        playLines:state.terminalState.playLines
     };
 
 };
 
-const GitTerminal = connect (
+const GitTerminal = connect(
     mapStateToProps,
     mapDispatchToProps
 )(GitTerminalUnconnected);
