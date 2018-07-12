@@ -45,8 +45,10 @@ public class ServerController {
         TrainingService ts = TrainingService.instance();
 
         ts.closeSession(sessionID);
+        //return "ok";
     }
 
+    @CrossOrigin
     @RequestMapping("/restartSession")
     public void restartSession(@RequestParam(value = "sessionID") String sessionID)
         throws IOException, ExecutionException, InterruptedException {
@@ -58,6 +60,7 @@ public class ServerController {
         if (session != null) {
             session.init();
         }
+        //return "ok";
     }
 
     //https://stackoverflow.com/questions/40557637/how-to-return-an-image-in-spring-boot-controller-and-serve-like-a-file-system/40585852

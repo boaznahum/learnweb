@@ -88,7 +88,7 @@ class GitTerminalUnconnected extends Component<Sig>{
         if (inHandler) {
             doIt();
         } else {
-            setTimeout(doIt, 1)
+            setTimeout(doIt, 10)
         }
 
     }
@@ -158,9 +158,9 @@ class GitTerminalUnconnected extends Component<Sig>{
                 //     this.setStateAfterCommand({currentRepo: RepoID.REMOTE});
                 //     return;
             } else if (nextCommand === ":restart") {
-                this.restartSession();
                 this.props.setCurrentRepo(RepoID.LOCAL1);
-                this.finishHandler();
+                this.restartSession();
+
             }else if (nextCommand.toLowerCase().startsWith("@")) {
 
                 // const file = nextCommand.substr(1);
@@ -174,7 +174,7 @@ class GitTerminalUnconnected extends Component<Sig>{
                 // return;
             } else {
                 this.runCommand(nextCommand);
-                this.finishHandler();
+                // this.finishHandler();
             }
         }
 
@@ -198,7 +198,7 @@ class GitTerminalUnconnected extends Component<Sig>{
 
     // @ts-ignore
     private restartSession() {
-        this.runRest(RESTART_URL+"?sessionID=1");
+        this.runRest(RESTART_URL+"?sessionID=1", true);
     }
 
     // @ts-ignore
@@ -229,10 +229,10 @@ class GitTerminalUnconnected extends Component<Sig>{
 
         const runCommandURL = RUN_COMMAND_URL + "?sessionID=1&repoID=" + repoID + "&command=" + encodeURIComponent(command);
 
-        this.runRest(runCommandURL);
+        this.runRest(runCommandURL, true);
     }
 
-    private runRest(url:string) {
+    private runRest(url:string, callFinish:boolean) {
 
         // https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api
         // @ts-ignore
@@ -272,7 +272,12 @@ class GitTerminalUnconnected extends Component<Sig>{
                     // @ts-ignore
                     this.child.console.return
                 );
-            });
+            }).then (res => {
+                if (callFinish) {
+                    this.finishHandler();
+                }
+            }
+        );
 
 
     }
