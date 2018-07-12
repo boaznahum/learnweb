@@ -32,7 +32,7 @@ class TrainingServiceImp implements TrainingService {
     }
 
     @Override
-    public TrainingSession getSession(String sessionID) {
+    public TrainingSession getOrCreateSession(String sessionID) {
 
         //Function<String, TrainingSession> createNewSession = TrainingSessionImp::new;
 
@@ -57,8 +57,13 @@ class TrainingServiceImp implements TrainingService {
     }
 
     @Override
+    public TrainingSession getSession(String sessionID) {
+        return sessions.get(sessionID);
+    }
+
+    @Override
     public void closeSession(String sessionID) throws InterruptedException, ExecutionException, IOException {
-        TrainingSession trainingSession = sessions.get(sessionID);
+        TrainingSession trainingSession = getSession(sessionID);
         if (trainingSession != null) {
             trainingSession.shutdown();
         }

@@ -26,7 +26,7 @@ public class ServerController {
 
         TrainingService ts = TrainingService.instance();
 
-        TrainingSession sess = ts.getSession(sessionID);
+        TrainingSession sess = ts.getOrCreateSession(sessionID);
 
 
         long id = sess.getImageID(repoID);
@@ -47,6 +47,19 @@ public class ServerController {
         ts.closeSession(sessionID);
     }
 
+    @RequestMapping("/restartSession")
+    public void restartSession(@RequestParam(value = "sessionID") String sessionID)
+        throws IOException, ExecutionException, InterruptedException {
+
+
+        TrainingService ts = TrainingService.instance();
+
+        TrainingSession session = ts.getSession(sessionID);
+        if (session != null) {
+            session.init();
+        }
+    }
+
     //https://stackoverflow.com/questions/40557637/how-to-return-an-image-in-spring-boot-controller-and-serve-like-a-file-system/40585852
     @CrossOrigin
     @RequestMapping("/image")
@@ -56,7 +69,7 @@ public class ServerController {
 
         TrainingService ts = TrainingService.instance();
 
-        TrainingSession sess = ts.getSession(sessionID);
+        TrainingSession sess = ts.getOrCreateSession(sessionID);
 
 
         byte[] img = sess.getImage(repoID);
@@ -76,7 +89,7 @@ public class ServerController {
 
         TrainingService ts = TrainingService.instance();
 
-        TrainingSession sess = ts.getSession(sessionID);
+        TrainingSession sess = ts.getOrCreateSession(sessionID);
 
 
         String response = sess.runCommandOnRepo(repoID, command, true);

@@ -19,5 +19,7 @@ public interface TrainingService {
 
     TrainingSession getSession(String sessionID);
 
+    TrainingSession getOrCreateSession(String sessionID);
+
     void closeSession(String sessionID) throws InterruptedException, ExecutionException, IOException;
 }

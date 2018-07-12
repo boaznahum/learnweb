@@ -11,8 +11,9 @@ import {RootState} from "./root/reducer";
 
 // https://github.com/autochthe/react-console/blob/master/docs/example/src/example.tsx
 
-
-const RUN_COMMAND_URL = "http://localhost:8080/runCommand";
+const SERVER_URL = "http://localhost:8080/";
+const RUN_COMMAND_URL = SERVER_URL + "runCommand";
+const RESTART_URL = SERVER_URL + "restartSession";
 
 
 interface IGTerminalState {
@@ -34,7 +35,7 @@ interface IGitTerminalActions {
 type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
 
 
-  class GitTerminalUnconnected extends Component<Sig>{
+class GitTerminalUnconnected extends Component<Sig>{
 
 
     private child: {
@@ -74,29 +75,70 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
     }
 
     private handler = (text: string) => {
+        let command = text;
+
+        while (command) {
+            let nextCommand = command;
+            const indexOf = command.indexOf("\n");
+
+            if (indexOf !== -1) {
+                nextCommand = command.substr(0,indexOf);
+                command = command.substr(indexOf+1);
+            } else {
+                command = "";
+            }
+            
+             const log = this.child.console;
+
+            if(log) {
+                log.log("command=" +command);
+                log.log("nextCommand=" +nextCommand);
+            }
+
+            // @ts-ignore
+            // this.child.console.log("nextCommand=" +nextCommand);
 
 
-        if (text === "") {
-            this.setStateAfterCommand({});
-            return;
-        }
+            if (nextCommand === "") {
+                this.setStateAfterCommand({});
+                // return;
+            } else if (nextCommand === ":1") {
+                this.props.setCurrentRepo(RepoID.LOCAL1);
+                this.setStateAfterCommand({currentRepo: RepoID.LOCAL1});
+                // return;
+            } else if (nextCommand === ":2") {
+                this.props.setCurrentRepo(RepoID.LOCAL2);
+                this.setStateAfterCommand({currentRepo: RepoID.LOCAL2});
+                // return;
+            } else if (nextCommand.toLowerCase() === ":r") {
 
-        if (text === "1") {
-            this.props.setCurrentRepo(RepoID.LOCAL1);
-            this.setStateAfterCommand({currentRepo: RepoID.LOCAL1});
-            return;
-        } else if (text === "2") {
-            this.props.setCurrentRepo(RepoID.LOCAL2);
-            this.setStateAfterCommand({currentRepo: RepoID.LOCAL2});
-            return;
-        }
-        if (text.toLowerCase() === "r") {
-            this.props.setCurrentRepo(RepoID.REMOTE);
-            this.setStateAfterCommand({currentRepo: RepoID.REMOTE});
-            return;
-        } else {
-            this.runCommand(text);
-            this.setStateAfterCommand({});
+                this.props.setCurrentRepo(RepoID.REMOTE);
+                this.setStateAfterCommand({currentRepo: RepoID.REMOTE});
+                // return;
+                // } else if (text.toLowerCase() === ":pause") {
+                //     this.props.setCurrentRepo(RepoID.REMOTE);
+                //
+                //     this.setStateAfterCommand({currentRepo: RepoID.REMOTE});
+                //     return;
+            } else if (nextCommand === ":restart") {
+                this.restartSession()
+                this.props.setCurrentRepo(RepoID.LOCAL1);
+                this.setStateAfterCommand({currentRepo: RepoID.LOCAL1});
+            }else if (nextCommand.toLowerCase().startsWith("@")) {
+
+                // const file = nextCommand.substr(1);
+                // alert(file)
+                // this.readTextFile("F:\\views\\g\\git_training_env\\1.txt");
+                // console.info(file)
+                command = ":1\ngit ec aaa\ngit push\n:2\ngit pull";
+
+                // this.props.setCurrentRepo(RepoID.REMOTE);
+                // this.setStateAfterCommand({});
+                // return;
+            } else {
+                this.runCommand(nextCommand);
+                this.setStateAfterCommand({});
+            }
         }
 
     };
@@ -117,6 +159,10 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
         return this.props.currentRepo + "> ";
     };
 
+    // @ts-ignore
+    private restartSession() {
+        this.runRest(RESTART_URL+"?sessionID=1");
+    }
 
     // @ts-ignore
     private runCommand(command: string) {
@@ -146,18 +192,23 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
 
         const runCommandURL = RUN_COMMAND_URL + "?sessionID=1&repoID=" + repoID + "&command=" + encodeURIComponent(command);
 
+        this.runRest(runCommandURL);
+    }
+
+    private runRest(url:string) {
+
         // https://developers.google.com/web/ilt/pwa/working-with-the-fetch-api
         // @ts-ignore
-        fetch(runCommandURL)
+        fetch(url)
         // @ts-ignore
             .then(res => {
 
                 if (res.ok) {
-                     return res.text();
+                    return res.text();
                 } else {
 
 
-                return res.json();
+                    return res.json();
                     // const json = res.json();
                     // // @ts-ignore
                     // return json;
@@ -188,6 +239,28 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
 
 
     }
+
+    // private loadFile() {
+    //     var reader = new FileReader();
+    //     var file = new File("F:\\views\\g\\git_training_env\\1.txt");
+    //     reader.readAsText();
+    // }
+    // private readTextFile(file: string)
+    // {
+    //     const rawFile = new XMLHttpRequest();
+    //     rawFile.open("GET", file, false);
+    //     rawFile.onreadystatechange = () => {
+    //         if(rawFile.readyState === 4)
+    //         {
+    //             if(rawFile.status === 200 || rawFile.status === 0)
+    //             {
+    //                 const allText = rawFile.responseText;
+    //                 alert(allText);
+    //             }
+    //         }
+    //     };
+    //     rawFile.send(null);
+    // }
 }
 function mapDispatchToProps(dispatch: Dispatch): IGitTerminalActions {
     return {
