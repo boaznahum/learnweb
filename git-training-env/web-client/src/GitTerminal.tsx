@@ -265,18 +265,28 @@ class GitTerminalUnconnected extends Component<Sig> {
 
     private promptLabel = () => {
 
+        let prompt="?>";
+
         switch (this.props.currentRepo) {
             case RepoID.LOCAL1:
-                return "L1>";
+                prompt = "L1>";
+                break;
 
             case RepoID.LOCAL2:
-                return "L2>";
+                prompt = "L2>";
+                break;
 
             case RepoID.REMOTE:
-                return "R>";
+                prompt = "R>";
+                break;
+
         }
 
-        return this.props.currentRepo + "> ";
+        if (this.props.isPlaying) {
+            prompt = "*" + prompt;
+        }
+
+        return  prompt;
     };
 
     // @ts-ignore
