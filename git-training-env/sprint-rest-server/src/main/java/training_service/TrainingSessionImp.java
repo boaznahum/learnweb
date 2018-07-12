@@ -5,6 +5,7 @@ import org.springframework.util.FileSystemUtils;
 import java.io.IOException;
 import java.io.InputStream;
 import java.nio.file.Files;
+import java.nio.file.NoSuchFileException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
@@ -44,8 +45,11 @@ class TrainingSessionImp implements TrainingSession {
         Path imagePath = getImagePath(repoID);
 
 
-        return Files.getLastModifiedTime(imagePath).to(TimeUnit.MICROSECONDS);
-
+        try {
+            return Files.getLastModifiedTime(imagePath).to(TimeUnit.MICROSECONDS);
+        } catch (NoSuchFileException e) {
+            return -1;
+        }
     }
 
     @Override
@@ -66,6 +70,8 @@ class TrainingSessionImp implements TrainingSession {
 
             return img;
 
+        } catch (NoSuchFileException e) {
+            return new byte[0];
         }
 
 
@@ -146,7 +152,8 @@ class TrainingSessionImp implements TrainingSession {
             });
     }
 
-    void init() throws InterruptedException, ExecutionException, IOException {
+    @Override
+    public void init() throws InterruptedException, ExecutionException, IOException {
 
         // create 3 repositories
         // put watch on each

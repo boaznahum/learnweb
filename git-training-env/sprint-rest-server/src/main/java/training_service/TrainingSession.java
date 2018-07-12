@@ -26,4 +26,6 @@ public interface TrainingSession {
     String runCommandOnRepo(String repoID, String command, boolean waitFor) throws IOException, ExecutionException, InterruptedException;
 
     void shutdown() throws IOException, ExecutionException, InterruptedException;
+
+    void init() throws InterruptedException, ExecutionException, IOException;
 }

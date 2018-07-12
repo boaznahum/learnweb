@@ -4,6 +4,7 @@
 import {Action, combineReducers} from "redux";
 
 import {appDefaultState, appReducer, IAppState} from "../AppState";
+import {IGTerminalState, terminalDefaultState, terminalReducer} from "../GitTerminalState";
 import * as Repo from '../repository/Reducer'
 
 
@@ -15,6 +16,8 @@ export interface RootState {
 
     app:IAppState
 
+    terminalState:IGTerminalState
+
 
 }
 
@@ -22,7 +25,8 @@ export const rootInitialState:RootState = {
 
     someDummy:"A dummy to learn",
     repo:Repo.repositoriesInitial,
-    app:appDefaultState
+    app:appDefaultState,
+    terminalState:terminalDefaultState
 
 };
 
@@ -47,6 +51,7 @@ export const  reducer = combineReducers<RootState>(
         someDummy:dummy,
         repo:Repo.repositoriesReducer,
 
+        terminalState: terminalReducer,
 
         app:appReducer
     }

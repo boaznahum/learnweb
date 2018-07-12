@@ -8,7 +8,9 @@ export enum RepoID {
 
 export enum ActionTypes {
     SET_ID = 'SET_ID',
-    SET_CURRENT_REPO = 'SET_CURRENT_REPO'
+    SET_CURRENT_REPO = 'SET_CURRENT_REPO',
+    SET_IN_HANDLER_STATE='SET_IN_HANDLER'
+
 }
 
 export interface RepositoryAction {

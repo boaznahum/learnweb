@@ -16,4 +16,5 @@ workspace.xml
 **/.idea/wf_run_local_options.xml
 
 #npm
-node_modules/
+node_modules/*.orig
+**/*.orig

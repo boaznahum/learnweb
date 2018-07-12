@@ -38,16 +38,17 @@ class Repository extends Component<Sig> {
     public render() {
 
         const id = this.props.imageRefreshID;
-
-        const imageURL = IMAGE_URL + "?sessionID=1&repoID=" + this.serverRepoID() + "&dummy=" + encodeURIComponent(id);
+        let imageSection;
+        if (id !== "-1") {
+            const imageURL = IMAGE_URL + "?sessionID=1&repoID=" + this.serverRepoID() + "&dummy=" + encodeURIComponent(id);
+            imageSection = <img src={imageURL}/>;
+        }
 
 
         return (
             <div className="HistoryImage">
                 <h3>{this.props.name}</h3>
-
-                <img src={imageURL}/>
-
+                {imageSection}
             </div>
         );
     }
