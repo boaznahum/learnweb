@@ -101,15 +101,6 @@ class GitTerminalUnconnected extends Component<Sig> {
 
         this.changeInHandler(false);
 
-        // @ts-ignore
-        // this.child.console.return()
-
-        // @ts-ignore
-        // this.setState(newState,
-        //     // @ts-ignore
-        //     this.child.console.return
-        // );
-
     }
 
     private startPlay(lines: string[]) {
@@ -185,6 +176,16 @@ class GitTerminalUnconnected extends Component<Sig> {
         this.props.dispatch(action);
     }
 
+    private stopPlay() {
+        const action: TerminalPlayDoneAction = {
+
+            type: ActionTypes.TERMINAL_PLAY_DONE,
+
+        };
+
+        this.props.dispatch(action);
+    }
+
 
     private handler = (text: string) => {
 
@@ -254,6 +255,12 @@ class GitTerminalUnconnected extends Component<Sig> {
             ];
 
             this.startPlay(lines);
+            this.finishHandler();
+        } else if (nextCommand.toLowerCase().startsWith("!")) {
+
+
+
+            this.stopPlay();
             this.finishHandler();
         } else {
             this.runCommand(nextCommand);
