@@ -97,8 +97,10 @@ class GitTerminalUnconnected extends Component<Sig> {
 
     }
 
-    private finishHandler() {
-
+    private finishHandler(shouldPlay:boolean) {
+        if (shouldPlay) {
+            this.playNextLine();
+        }
         this.changeInHandler(false);
 
     }
@@ -160,12 +162,12 @@ class GitTerminalUnconnected extends Component<Sig> {
                     "| | | | |__ | | | || | | | |_/ /\\ `--. \n" +
                     "| | | |  __|| | | || | | |  __/  `--. \\\n" +
                     "| |/ /| |___\\ \\_/ /\\ \\_/ / |    /\\__/ /\n" +
-                    "______\\_____ ____/  _____\\_|    \\____/ \n" +
-                    "| ___ \\ | | | |    |  ___|             \n" +
-                    "| |_/ / | | | |    | |__               \n" +
-                    "|    /| | | | |    |  __|              \n" +
-                    "| |\\ \\| |_| | |____| |___              \n" +
-                    "\\_| \\_|\\___/\\_____/\\____/       ");
+                    "|___________ \\____  \\________ _ \\____/ \n" +
+                    "    | ___ \\ | | | |    |  ___| |       \n" +
+                    "    | |_/ / | | | |    | |__ | |       \n" +
+                    "    |    /| | | | |    |  __|| |       \n" +
+                    "    | |\\ \\| |_| | |____| |___|_|       \n" +
+                    "    \\_| \\_|\\___/\\_____/\\____/(_)  ");
             }
 
         } else {
@@ -232,23 +234,23 @@ class GitTerminalUnconnected extends Component<Sig> {
         if (nextCommand === "") {
 
 
-            this.finishHandler();
+            this.finishHandler(false);
             // return;
         } else if (nextCommand === ":1") {
             this.props.setCurrentRepo(RepoID.LOCAL1);
-            this.playNextLine();
-            this.finishHandler();
+            // this.playNextLine();
+            this.finishHandler(true);
             // return;
         } else if (nextCommand === ":2") {
             this.props.setCurrentRepo(RepoID.LOCAL2);
-            this.playNextLine();
-            this.finishHandler();
+            // this.playNextLine();
+            this.finishHandler(true);
             // return;
         } else if (nextCommand.toLowerCase() === ":r") {
 
             this.props.setCurrentRepo(RepoID.REMOTE);
-            this.playNextLine();
-            this.finishHandler();
+            // this.playNextLine();
+            this.finishHandler(true);
             // return;
             // } else if (text.toLowerCase() === ":pause") {
             //     this.props.setCurrentRepo(RepoID.REMOTE);
@@ -257,8 +259,8 @@ class GitTerminalUnconnected extends Component<Sig> {
             //     return;
         } else if (nextCommand === ":restart") {
             this.restartSession();
-            this.props.setCurrentRepo(RepoID.LOCAL1);
-            this.playNextLine();
+            // this.props.setCurrentRepo(RepoID.LOCAL1);
+            // this.playNextLine();
             // this.finishHandler();
         } else if (nextCommand.toLowerCase().startsWith("@")) {
 
@@ -280,13 +282,13 @@ class GitTerminalUnconnected extends Component<Sig> {
             ];
 
             this.startPlay(lines);
-            this.finishHandler();
+            this.finishHandler(false);
         } else if (nextCommand.toLowerCase().startsWith("!")) {
 
 
 
             this.stopPlay();
-            this.finishHandler();
+            this.finishHandler(false);
         } else {
             this.runCommand(nextCommand);
             // this.finishHandler();
@@ -393,13 +395,12 @@ class GitTerminalUnconnected extends Component<Sig> {
                     this.child.console.log(m);
                 }
 
-                this.playNextLine();
-                this.finishHandler();
-            }).then (res => {
+                // this.playNextLine();
                 if (callFinish) {
-                    this.finishHandler();
+                    this.finishHandler(true);
                 }
             }
+
         );
 
 
