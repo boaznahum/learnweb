@@ -139,6 +139,7 @@ class GitTerminalUnconnected extends Component<Sig> {
             done = true;
         }
 
+        const log = this.child.console;
         let action: AnyAction;
 
         if (done) {
@@ -152,9 +153,24 @@ class GitTerminalUnconnected extends Component<Sig> {
 
             action = a;
 
+            if (log) {
+                log.log("Playing finished!\n"+
+                "______ _____ _   _  ___________  _____ \n" +
+                    "|  _  \\  ___| | | ||  _  | ___ \\/  ___|\n" +
+                    "| | | | |__ | | | || | | | |_/ /\\ `--. \n" +
+                    "| | | |  __|| | | || | | |  __/  `--. \\\n" +
+                    "| |/ /| |___\\ \\_/ /\\ \\_/ / |    /\\__/ /\n" +
+                    "______\\_____ ____/  _____\\_|    \\____/ \n" +
+                    "| ___ \\ | | | |    |  ___|             \n" +
+                    "| |_/ / | | | |    | |__               \n" +
+                    "|    /| | | | |    |  __|              \n" +
+                    "| |\\ \\| |_| | |____| |___              \n" +
+                    "\\_| \\_|\\___/\\_____/\\____/       ");
+            }
+
         } else {
 
-            const log = this.child.console;
+
 
             if (log) {
                 log.log("Will play next command: '" + this.props.playLines[currentLine] + "'");
@@ -247,11 +263,20 @@ class GitTerminalUnconnected extends Component<Sig> {
         } else if (nextCommand.toLowerCase().startsWith("@")) {
 
             const lines = [
+                ":restart",
                 ":1",
-                "git ec aaa",
+                "git ec commit1",
                 "git push",
                 ":2",
-                "git pull"
+                "git pull",
+                "git ec commit2",
+                "git push",
+                ":1",
+                "git ec commit3",
+                "git push",
+                "git pull",
+                "git push"
+
             ];
 
             this.startPlay(lines);
