@@ -18,6 +18,7 @@ const RUN_COMMAND_URL = "http://localhost:8080/runCommand";
 interface IGTerminalState {
     // 1 - local 1, 2 - local 2, 3 - remote
     currentRepo: RepoID;
+    inHandler:boolean;
 }
 
 interface IGTerminalProps {
@@ -26,6 +27,9 @@ interface IGTerminalProps {
 }
 
 interface IGitTerminalActions {
+
+    // for general use, should be removed
+    dispatch:Dispatch;
 
     setCurrentRepo(repoID: RepoID): void
 
@@ -51,7 +55,6 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
 
         // @ts-ignore
         return <Console ref={ref => this.child.console = ref}
-                        key={this.props.currentRepo.toString()}
                         handler={this.handler}
                         promptLabel={this.promptLabel}
             // welcomeMessage={"Welcome to the react-console demo!\nThis is an example of a simple echo console."}
@@ -60,7 +63,7 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
     }
 
 
-    private setStateAfterCommand(newState: any) {
+    private finishHandler() {
 
         // @ts-ignore
         this.child.console.return()
@@ -73,30 +76,31 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
 
     }
 
+
     private handler = (text: string) => {
 
 
         if (text === "") {
-            this.setStateAfterCommand({});
+            this.finishHandler();
             return;
         }
 
         if (text === "1") {
             this.props.setCurrentRepo(RepoID.LOCAL1);
-            this.setStateAfterCommand({currentRepo: RepoID.LOCAL1});
+            this.finishHandler();
             return;
         } else if (text === "2") {
             this.props.setCurrentRepo(RepoID.LOCAL2);
-            this.setStateAfterCommand({currentRepo: RepoID.LOCAL2});
+            this.finishHandler();
             return;
         }
         if (text.toLowerCase() === "r") {
             this.props.setCurrentRepo(RepoID.REMOTE);
-            this.setStateAfterCommand({currentRepo: RepoID.REMOTE});
+            this.finishHandler();
             return;
         } else {
             this.runCommand(text);
-            this.setStateAfterCommand({});
+            this.finishHandler();
         }
 
     };
@@ -192,6 +196,7 @@ type Sig = IGTerminalProps & IGTerminalState & IGitTerminalActions;
 function mapDispatchToProps(dispatch: Dispatch): IGitTerminalActions {
     return {
 
+        dispatch,
         setCurrentRepo: (currentRepo: RepoID) => {
             dispatch(setCurrentRepo(currentRepo));
         }

@@ -18,7 +18,7 @@ export interface RootState {
 
 }
 
-export const initialState:RootState = {
+export const rootInitialState:RootState = {
 
     someDummy:"A dummy to learn",
     repo:Repo.repositoriesInitial,
