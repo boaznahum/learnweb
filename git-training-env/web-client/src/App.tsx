@@ -2,14 +2,16 @@ import * as React from 'react';
 import {connect} from "react-redux";
 import './App.css';
 import {IAppState} from "./AppState";
-// @ts-ignore
-import GitTerminal from "./GitTerminal";
 import {RepoID} from "./repository/Actions";
 import Repositories from './repository/Repositories'
 import {RootState} from "./root/reducer";
+// @ts-ignore
+import GitTerminal from "./terminal/GitTerminal";
+import TerminalBar from "./toolbar/Toolbar";
 
 
-interface IAppProps {}
+interface IAppProps {
+}
 
 type Sig = IAppProps & IAppState & {};
 
@@ -29,9 +31,9 @@ class App extends React.Component<Sig> {
         //     remote += "*";
         // }
 
-        const name1:string = "Local 1";
-        const name2:string = "Local 2";
-        const remote:string = "Remote";
+        const name1: string = "Local 1";
+        const name2: string = "Local 2";
+        const remote: string = "Remote";
 
 
         return (
@@ -39,25 +41,28 @@ class App extends React.Component<Sig> {
 
             <div className="App">
 
-                <Repositories.RepositoriesManager />
+                <div className="ToolBar">
+                    <TerminalBar />
+                </div>
 
-                <div className={this.props.currentRepo === RepoID.REMOTE ? "Remote Current" : "Remote"} >
 
-                    { Repositories.createRepoElement({ repoID:RepoID.REMOTE, name:remote})}
+                <Repositories.RepositoriesManager/>
+
+                <div className={this.props.currentRepo === RepoID.REMOTE ? "Remote Current" : "Remote"}>
+
+                    {Repositories.createRepoElement({repoID: RepoID.REMOTE, name: remote})}
                 </div>
 
                 <div className="Terminal">
                     <GitTerminal sessionID={"1"}/>
-                    {// <input type="file" id="fileinput" />
-                    }
 
                 </div>
 
                 <div className={this.props.currentRepo === RepoID.LOCAL1 ? "Local Current" : "Local"}>
-                    { Repositories.createRepoElement({ repoID:RepoID.LOCAL1, name:name1})}
+                    {Repositories.createRepoElement({repoID: RepoID.LOCAL1, name: name1})}
                 </div>
                 <div className={this.props.currentRepo === RepoID.LOCAL2 ? "Local Current" : "Local"}>
-                    { Repositories.createRepoElement({ repoID:RepoID.LOCAL2, name:name2})}
+                    {Repositories.createRepoElement({repoID: RepoID.LOCAL2, name: name2})}
                 </div>
 
 
@@ -65,6 +70,7 @@ class App extends React.Component<Sig> {
 
         );
     }
+
     // function readSingleFile(evt) {
     //     //Retrieve the first (and only!) File from the FileList object
     //     var f = evt.target.files[0];

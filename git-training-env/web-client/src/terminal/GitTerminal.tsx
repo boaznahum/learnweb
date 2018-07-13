@@ -7,14 +7,14 @@ import Console from 'react-console-component'
 
 import 'react-console-component/main.css';
 import {AnyAction} from "redux";
+import {ActionTypes, RepoID, setCurrentRepo} from "../repository/Actions";
+import {RootState} from "../root/reducer";
 import {
     ChangeInHandlerAction,
     IGTerminalState,
     TerminalPlayDoneAction, TerminalPlayNextLineAction,
     TerminalPlayStartAction
 } from "./GitTerminalState";
-import {ActionTypes, RepoID, setCurrentRepo} from "./repository/Actions";
-import {RootState} from "./root/reducer";
 
 // https://github.com/autochthe/react-console/blob/master/docs/example/src/example.tsx
 

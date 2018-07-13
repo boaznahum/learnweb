@@ -4,8 +4,8 @@
 import {Action, combineReducers} from "redux";
 
 import {appDefaultState, appReducer, IAppState} from "../AppState";
-import {IGTerminalState, terminalDefaultState, terminalReducer} from "../GitTerminalState";
 import * as Repo from '../repository/Reducer'
+import {IGTerminalState, terminalDefaultState, terminalReducer} from "../terminal/GitTerminalState";
 
 
 export interface RootState {

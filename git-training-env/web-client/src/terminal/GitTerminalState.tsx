@@ -1,5 +1,5 @@
 import {Action} from "redux";
-import {ActionTypes, RepoID} from "./repository/Actions";
+import {ActionTypes, RepoID} from "../repository/Actions";
 
 export interface IGTerminalState {
     // 1 - local 1, 2 - local 2, 3 - remote
