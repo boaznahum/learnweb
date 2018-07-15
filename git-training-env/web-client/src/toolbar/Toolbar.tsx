@@ -4,9 +4,11 @@ import IconButton from "material-ui/IconButton";
 import IconMenu from 'material-ui/IconMenu'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import Toolbar from "material-ui/Toolbar";
 import * as React from 'react';
 
+import MenuItem from "material-ui/MenuItem";
 import {RepoID, setCurrentRepo} from "../repository/Actions";
 import store from '../store'
 
@@ -37,12 +39,25 @@ class TerminalBar extends React.Component<AppBarProps> {
 
     public render(): React.ReactNode {
 
+
         return <MuiThemeProvider muiTheme={getMuiTheme()}>
             <AppBar>
 
                 <Toolbar>
                     <IconMenu
-                        iconButtonElement={<IconButton className="icon-menu" color="inherit" aria-label="Menu"/>}/>
+                        iconButtonElement={
+                            <IconButton className="icon-menu" color="inherit" aria-label="Menu">
+                                <MoreVertIcon/>
+                            </IconButton>
+                        }>
+
+
+                        <MenuItem onClick={this.onItemClick(RepoID.LOCAL1)}>1</MenuItem>
+                        <MenuItem onClick={this.onItemClick(RepoID.LOCAL2)}>2</MenuItem>
+                        <MenuItem onClick={this.onItemClick(RepoID.REMOTE)}>R</MenuItem>
+
+
+                    </IconMenu>
                     <Button onClick={this.onItemClick(RepoID.LOCAL1)}>1</Button>
                     <Button onClick={this.onItemClick(RepoID.LOCAL2)}>2</Button>
                     <Button onClick={this.onItemClick(RepoID.REMOTE)}>R</Button>
@@ -54,7 +69,7 @@ class TerminalBar extends React.Component<AppBarProps> {
 
     }
 
-    private onItemClick(curRepo:RepoID) {
+    private onItemClick(curRepo: RepoID) {
 
         return () => {
             store.dispatch(setCurrentRepo(curRepo));
